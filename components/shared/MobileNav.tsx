@@ -38,7 +38,7 @@ const  MobileNav = ({setCurrentLink, currentLink}: any) => {
         >
           <div className="w-full flex flex-col items-center gap-1">
             <Image
-              src="/assets/images/rdl-logo-white.svg"
+              src="assets/images/rdl-logo-white.svg"
               alt="logo de refugio del lobo"
               height={112}
               width={112}
