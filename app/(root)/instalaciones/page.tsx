@@ -16,27 +16,27 @@ const Instalaciones = () => {
               <div className="flex flex-wrap justify-evenly gap-10">
                 <LinkCard
                   text="Habitaciones"
-                  imgSrc="/public/assets/images/interior/habitaciones/habitaciones_primavera_01.jpg"
+                  imgSrc="https://raw.githubusercontent.com/refugio-del-lobo/rdl-website/main/public/assets/images/interior/habitaciones/habitaciones_primavera_01.jpg"
                   href="/instalaciones/habitaciones"
                 />
                 <LinkCard
                   text="Baños"
                   href="/instalaciones/banos"
-                  imgSrc="/assets/images/interior/banos/banos_05.jpg"
+                  imgSrc="https://raw.githubusercontent.com/refugio-del-lobo/rdl-website/main/public/assets/images/interior/banos/banos_05.jpg"
                 />
                 <LinkCard
                   text="Livings"
                   href="/instalaciones/livings"
-                  imgSrc="/assets/images/interior/living/living_01.jpg"
+                  imgSrc="https://raw.githubusercontent.com/refugio-del-lobo/rdl-website/main/public/assets/images/interior/living/living_01.jpg"
                 />
                 <LinkCard
                   text="Quincho"
                   href="/instalaciones/quincho"
-                  imgSrc="/assets/images/interior/quincho/quincho_04.jpg" />
+                  imgSrc="https://raw.githubusercontent.com/refugio-del-lobo/rdl-website/main/public/assets/images/interior/quincho/quincho_04.jpg" />
                 <LinkCard
                   text="Cocina"
                   href="/instalaciones/cocina"
-                  imgSrc="/assets/images/interior/cocina/cocina_02.jpg"
+                  imgSrc="https://raw.githubusercontent.com/refugio-del-lobo/rdl-website/main/public/assets/images/interior/cocina/cocina_02.jpg"
                 />
               </div>
               <div></div>
@@ -51,27 +51,27 @@ const Instalaciones = () => {
                 <LinkCard
                   text="Playita"
                   href="/instalaciones/playita"
-                  imgSrc="/assets/images/exterior/playita/playita_06.jpg"
+                  imgSrc="https://raw.githubusercontent.com/refugio-del-lobo/rdl-website/main/public/assets/images/exterior/playita/playita_06.jpg"
                 />
                 <LinkCard
                   text="Invernadero"
                   href="/instalaciones/invernadero"
-                  imgSrc="/assets/images/exterior/invernadero/invernadero_01.jpg"
+                  imgSrc="https://raw.githubusercontent.com/refugio-del-lobo/rdl-website/main/public/assets/images/exterior/invernadero/invernadero_01.jpg"
                 />
                 <LinkCard
                   text="Deck"
                   href="/instalaciones/deck"
-                  imgSrc="/assets/images/exterior/deck/deck_01.jpg"
+                  imgSrc="https://raw.githubusercontent.com/refugio-del-lobo/rdl-website/main/public/assets/images/exterior/deck/deck_01.jpg"
                 />
                 <LinkCard
                   text="Zona deportiva"
                   href="/instalaciones/zona-deportiva"
-                  imgSrc="/assets/images/exterior/zona_deportiva/zona_deportiva_04.jpg"
+                  imgSrc="https://raw.githubusercontent.com/refugio-del-lobo/rdl-website/main/public/assets/images/exterior/zona_deportiva/zona_deportiva_04.jpg"
                 />
                 <LinkCard
                   text="La matera"
                   href="/instalaciones/matera"
-                  imgSrc="/assets/images/exterior/matera/matera_08.jpg"
+                  imgSrc="https://raw.githubusercontent.com/refugio-del-lobo/rdl-website/main/public/assets/images/exterior/matera/matera_08.jpg"
                 />
 
               </div>

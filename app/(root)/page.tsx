@@ -18,7 +18,7 @@ export default function Home() {
         <div className=" flex justify-center items-center p-4">
           <div className="video-frame">
             <video
-              src="/assets/videos/institucional.mp4"
+              src="https://raw.githubusercontent.com/refugio-del-lobo/rdl-website/main/public/assets/videos/institucional.mp4"
               autoPlay
               muted
               loop
@@ -151,7 +151,7 @@ export default function Home() {
               <div className="flex flex-wrap w-full mt-4 home-thumb-section opacity-layer-70">
                 <div className="home-thumb-img">
                   <Image
-                    src="/assets/images/home_office.jpg"
+                    src="https://raw.githubusercontent.com/refugio-del-lobo/rdl-website/main/public/assets/images/home_office.jpg"
                     width={300}
                     height={300}
                     alt="logo de Refugio del Lobo"
@@ -160,7 +160,7 @@ export default function Home() {
                 </div>
                 <div className="home-thumb-img">
                   <Image
-                    src="/assets/images/transfer.jpg"
+                    src="https://raw.githubusercontent.com/refugio-del-lobo/rdl-website/main/public/assets/images/transfer.jpg"
                     width={300}
                     height={300}
                     alt="logo de Refugio del Lobo"
@@ -169,7 +169,7 @@ export default function Home() {
                 </div>
                 <div className="home-thumb-img">
                   <Image
-                    src="/assets/images/4_comidas.jpg"
+                    src="https://raw.githubusercontent.com/refugio-del-lobo/rdl-website/main/public/assets/images/4_comidas.jpg"
                     width={300}
                     height={300}
                     alt="logo de Refugio del Lobo"
@@ -178,7 +178,7 @@ export default function Home() {
                 </div>
                 <div className="home-thumb-img">
                   <Image
-                    src="/assets/images/house_keeping.jpg"
+                    src="https://raw.githubusercontent.com/refugio-del-lobo/rdl-website/main/public/assets/images/house_keeping.jpg"
                     width={300}
                     height={300}
                     alt="logo de Refugio del Lobo"
@@ -349,7 +349,7 @@ export default function Home() {
               <div className="flex flex-wrap w-full mt-4 home-thumb-section opacity-layer-70">
                 <div className="home-thumb-img">
                   <Image
-                    src="/assets/images/trekking.jpg"
+                    src="https://raw.githubusercontent.com/refugio-del-lobo/rdl-website/main/public/assets/images/trekking.jpg"
                     width={300}
                     height={300}
                     alt="logo de Refugio del Lobo"
@@ -358,7 +358,7 @@ export default function Home() {
                 </div>
                 <div className="home-thumb-img">
                   <Image
-                    src="/assets/images/caballo.jpg"
+                    src="https://raw.githubusercontent.com/refugio-del-lobo/rdl-website/main/public/assets/images/caballo.jpg"
                     width={300}
                     height={300}
                     alt="logo de Refugio del Lobo"
@@ -367,7 +367,7 @@ export default function Home() {
                 </div>
                 <div className="home-thumb-img">
                   <Image
-                    src="/assets/images/tenis.jpg"
+                    src="https://raw.githubusercontent.com/refugio-del-lobo/rdl-website/main/public/assets/images/tenis.jpg"
                     width={300}
                     height={300}
                     alt="logo de Refugio del Lobo"
@@ -376,7 +376,7 @@ export default function Home() {
                 </div>
                 <div className="home-thumb-img">
                   <Image
-                    src="/assets/images/kayak.jpg"
+                    src="https://raw.githubusercontent.com/refugio-del-lobo/rdl-website/main/public/assets/images/kayak.jpg"
                     width={300}
                     height={300}
                     alt="logo de Refugio del Lobo"
