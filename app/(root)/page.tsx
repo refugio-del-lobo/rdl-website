@@ -32,19 +32,6 @@ export default function Home() {
               preload="true"
               className="video"
             ></video>
-            {/* <video
-              src="assets/videos/rdl_reel_camino_a_chapelco.mp4"
-              autoPlay
-              muted
-              loop
-              playsInline
-              // controls
-              preload="true"
-              className="video"
-              // id="miVideo"
-              // ref={videoRef}
-              // onLoadedMetadata={handleLoadedMetadata}
-            ></video> */}
           </div>
         </div>
 
