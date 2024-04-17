@@ -65,7 +65,7 @@ const Propuestas = () => {
                     <div className="flex flex-col items-center gap-4 lg:flex-row-reverse">   <div className="h-4/6 flex justify-center items-center p-4 lg:w-2/6">
                         <div className="video-frame">
                           <video
-                            src="/assets/videos/rdl_reel_camino_a_chapelco.mp4"
+                            src="assets/videos/rdl_reel_camino_a_chapelco.mp4"
                             autoPlay
                             muted
                             loop

@@ -18,7 +18,7 @@ export default function Home() {
         <div className=" flex justify-center items-center p-4">
           <div className="video-frame">
             <video
-              src="https://raw.githubusercontent.com/refugio-del-lobo/rdl-website/main/public/assets/videos/institucional.mp4"
+              src="assets/videos/institucional.mp4"
               autoPlay
               muted
               loop
