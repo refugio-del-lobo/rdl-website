@@ -17,24 +17,25 @@ const Instalaciones = () => {
                 <LinkCard
                   text="Habitaciones"
                   imgSrc="/assets/images/interior/habitaciones/habitaciones_primavera_01.jpg"
+                  href="/instalaciones/habitaciones"
                 />
                 <LinkCard
                   text="Baños"
-                  href="/instalaciones"
+                  href="/instalaciones/banos"
                   imgSrc="/assets/images/interior/banos/banos_05.jpg"
                 />
                 <LinkCard
                   text="Livings"
-                  href="/instalaciones"
+                  href="/instalaciones/livings"
                   imgSrc="/assets/images/interior/living/living_01.jpg"
                 />
                 <LinkCard
                   text="Quincho"
-                  href="/instalaciones"
+                  href="/instalaciones/quincho"
                   imgSrc="/assets/images/interior/quincho/quincho_04.jpg" />
                 <LinkCard
                   text="Cocina"
-                  href="/instalaciones"
+                  href="/instalaciones/cocina"
                   imgSrc="/assets/images/interior/cocina/cocina_02.jpg"
                 />
               </div>
@@ -49,27 +50,27 @@ const Instalaciones = () => {
                 <LinkCard text="Fogoneros" href="/instalaciones" imgSrc="/assets/images/exterior/fogoneros/fogoneros_09.jpg"/>
                 <LinkCard
                   text="Playita"
-                  href="/instalaciones"
+                  href="/instalaciones/playita"
                   imgSrc="/assets/images/exterior/playita/playita_06.jpg"
                 />
                 <LinkCard
                   text="Invernadero"
-                  href="/instalaciones"
+                  href="/instalaciones/invernadero"
                   imgSrc="/assets/images/exterior/invernadero/invernadero_01.jpg"
                 />
                 <LinkCard
                   text="Deck"
-                  href="/instalaciones"
+                  href="/instalaciones/deck"
                   imgSrc="/assets/images/exterior/deck/deck_01.jpg"
                 />
                 <LinkCard
                   text="Zona deportiva"
-                  href="/instalaciones"
+                  href="/instalaciones/zona-deportiva"
                   imgSrc="/assets/images/exterior/zona_deportiva/zona_deportiva_04.jpg"
                 />
                 <LinkCard
                   text="La matera"
-                  href="/instalaciones"
+                  href="/instalaciones/matera"
                   imgSrc="/assets/images/exterior/matera/matera_08.jpg"
                 />
 
