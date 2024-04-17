@@ -126,6 +126,7 @@ const Nosotros = () => {
                     {" "}
                     ¡También podés consultarnos para gestionar excursiones!
                   </p>
+                  
                   <p>¡TE ESPERAMOS!</p>
                 </div>
               </div>
