@@ -16,7 +16,7 @@ const Instalaciones = () => {
               <div className="flex flex-wrap justify-evenly gap-10">
                 <LinkCard
                   text="Habitaciones"
-                  imgSrc="https://raw.githubusercontent.com/refugio-del-lobo/rdl-website/main/public/assets/images/interior/habitaciones/habitaciones_primavera_01.jpg"
+                  imgSrc="assets/images/interior/habitaciones/habitaciones_primavera_01.jpg"
                   href="/instalaciones/habitaciones"
                 />
                 <LinkCard
