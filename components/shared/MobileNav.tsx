@@ -24,7 +24,7 @@ const  MobileNav = ({setCurrentLink, currentLink}: any) => {
         <SheetTrigger className="align-middle">
           <Image
             style={{ color: "white" }}
-            src="/assets/icons/menu.svg"
+            src="https://raw.githubusercontent.com/refugio-del-lobo/rdl-website/main/public/assets/icons/menu.svg"
             alt="Mobile menu icon"
             height={46}
             width={46}

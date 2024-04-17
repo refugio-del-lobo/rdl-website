@@ -31,7 +31,7 @@ const Nosotros = () => {
                   <div className="flex justify-center max-w-[500px] max-h-[500px] drop-shadow-2xl">
                     <div className="rounded-sm img-container flex">
                       <Image
-                        src={"/assets/images/el_pegual_letrero.jpg"}
+                        src={"https://raw.githubusercontent.com/refugio-del-lobo/rdl-website/main/public/assets/images/el_pegual_letrero.jpg"}
                         width={500}
                         height={500}
                         alt="letrero del club de campo 'El Pegual' "
@@ -55,7 +55,7 @@ const Nosotros = () => {
                   <div className="flex justify-center max-w-[500px] max-h-[500px] drop-shadow-2xl">
                     <div className="rounded-sm img-container flex">
                       <Image
-                        src={"/assets/images/spot_bosque.jpg"}
+                        src={"https://raw.githubusercontent.com/refugio-del-lobo/rdl-website/main/public/assets/images/spot_bosque.jpg"}
                         width={500}
                         height={500}
                         alt="spot del bosque"
@@ -80,7 +80,7 @@ const Nosotros = () => {
                   <div className="flex justify-center max-w-[500px] max-h-[500px] drop-shadow-2xl">
                     <div className="rounded-sm img-container flex">
                       <Image
-                        src={"/assets/images/casa_frente_1.jpg"}
+                        src={"https://raw.githubusercontent.com/refugio-del-lobo/rdl-website/main/public/assets/images/casa_frente_1.jpg"}
                         width={500}
                         height={500}
                         alt="frente de la casa"
@@ -102,7 +102,7 @@ const Nosotros = () => {
                   <div className="flex justify-center max-w-[500px] max-h-[500px] drop-shadow-2xl">
                     <div className="img-container flex">
                       <Image
-                        src={"/assets/images/desayuno_outdoor.jpg"}
+                        src={"https://raw.githubusercontent.com/refugio-del-lobo/rdl-website/main/public/assets/images/desayuno_outdoor.jpg"}
                         width={500}
                         height={500}
                         alt="desayuno en el pegual"
@@ -115,7 +115,7 @@ const Nosotros = () => {
               <Separator className="my-10 bg-gray-700" />
               <div className="flex flex-col items-center relative min-h-[200px]">
                 <Image
-                  src={"/assets/images/rdl-logo-white.svg"}
+                  src={"https://raw.githubusercontent.com/refugio-del-lobo/rdl-website/main/public/assets/images/rdl-logo-white.svg"}
                   width={300}
                   height={300}
                   className="z-10 absolute mt-[-30px] opacity-50"

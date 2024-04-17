@@ -101,7 +101,7 @@ const Propuestas = () => {
                     <div className="flex justify-center max-w-[500px] max-h-[500px] drop-shadow-2xl">
                       <div className="rounded-sm img-container">
                         <Image
-                          src={"/assets/images/fogon_grupo_4.jpg"}
+                          src={"https://raw.githubusercontent.com/refugio-del-lobo/rdl-website/main/public/assets/images/fogon_grupo_4.jpg"}
                           width={500}
                           height={500}
                           alt="2 personas en el fogon"
@@ -112,7 +112,7 @@ const Propuestas = () => {
                     <div className="flex justify-center max-w-[500px] max-h-[500px] drop-shadow-2xl">
                       <div className="rounded-sm img-container">
                         <Image
-                          src={"/assets/images/fogon_grupo_4.jpg"}
+                          src={"https://raw.githubusercontent.com/refugio-del-lobo/rdl-website/main/public/assets/images/fogon_grupo_4.jpg"}
                           width={500}
                           height={500}
                           alt="2 personas en el fogon"
@@ -130,7 +130,7 @@ const Propuestas = () => {
                     <div className="flex justify-center max-w-[500px] max-h-[500px] drop-shadow-2xl">
                       <div className="rounded-sm img-container">
                         <Image
-                          src={"/assets/images/fogon_grupo_4.jpg"}
+                          src={"https://raw.githubusercontent.com/refugio-del-lobo/rdl-website/main/public/assets/images/fogon_grupo_4.jpg"}
                           width={500}
                           height={500}
                           alt="2 personas en el fogon"

@@ -15,7 +15,7 @@ const Footer = () => {
             Contacto
             <Image
               style={{ color: "white" }}
-              src="/assets/icons/whatsapp_icon.svg"
+              src="https://raw.githubusercontent.com/refugio-del-lobo/rdl-website/main/public/assets/icons/whatsapp_icon.svg"
               alt="Mobile menu icon"
               height={36}
               width={36}
@@ -32,7 +32,7 @@ const Footer = () => {
             Locación
             <Image
               style={{ color: "white" }}
-              src="/assets/icons/location.svg"
+              src="https://raw.githubusercontent.com/refugio-del-lobo/rdl-website/main/public/assets/icons/location.svg"
               alt="Mobile menu icon"
               height={36}
               width={36}
@@ -50,7 +50,7 @@ const Footer = () => {
             Redes
             <Image
               style={{ color: "white" }}
-              src="/assets/icons/instagram_icon.svg"
+              src="https://raw.githubusercontent.com/refugio-del-lobo/rdl-website/main/public/assets/icons/instagram_icon.svg"
               alt="Mobile menu icon"
               height={36}
               width={36}
