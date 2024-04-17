@@ -2,32 +2,289 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
+
+/* ================ CSS Reset ================= */
+* {
+  min-width: 0;
+  font: inherit;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+img, video, svg {
+  display: block;
+  height: auto;
+  max-width: 100%;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  margin:0;
+  min-height: 100dvh;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+/* ================ Tailwind styles ================= */
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
+
+  .headerWrapper {
+    @apply max-w-screen-xl  lg:mx-auto px-5 md:px-10 2xl:px-5 w-full
+  }
+  .wrapper {
+    @apply max-w-screen-xl  lg:mx-auto p-5 md:px-10 2xl:px-5 w-full
+  }
+  .wrapper-propuestas {
+    @apply max-w-screen-xl  lg:mx-auto p-0 md:px-10 2xl:px-5 w-full
+  }
+  .footer-wrapper {
+    @apply max-w-screen-xl  lg:mx-auto px-5 py-3 md:px-10 2xl:px-5 w-full
   }
 }
+
+.opacity-layer-90 {
+  background-color: #e7e4dd90 ;
+}
+.opacity-layer-70 {
+  background-color: #e7e4dd70 ;
+}
+
+
+ /* =====================   HEADER STYLES ===================== */
+.navItem {
+  transition: all linear .15s;
+}
+.navItem:hover {
+  transform: scale(1.2);
+  transition: all linear .15s;
+  opacity: 0.9;
+}
+
+.selectedLinkStyle {
+  transform: scale(1.2);
+  opacity: 0.9;
+  filter: drop-shadow(0px 0px 3px rgba(255, 255, 255, 0.9));
+}
+
+header.header-img {
+  background-color: black;
+  opacity: .7;
+}
+
+.header-img-mobile {
+  background-image: url('/assets/images/casa_de_lejos_lejos.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+header {
+  display: flex;
+  position: fixed;
+  top: 0;
+  height: 80px;
+}
+
+@media only screen and (min-width: 768px){
+  header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    height: 115px;
+  }
+}
+
+
+.hide-header {
+  transform: translateY(-100%);
+  transition: all .5s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+.show-header {
+  transition: all .5s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+
+/* ========================= HEADER/FOOTER PADDINGS ====================== */
+.hf-paddings {
+  padding-top: 80px;
+  padding-bottom: 200px;
+}
+
+@media only screen and (min-width: 768px){
+  .hf-paddings {
+    padding-bottom: 200px;
+    padding-top: 115px;
+  }
+}
+
+/* ========================= HOME STYLES ====================== */
+.video-frame {
+  background-color: #202020;
+  padding: 8px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px #202020, inset 0px 0px 2px #fff;
+  max-height: 60%;
+  max-width: 1400px;
+}
+
+.video {
+  border-radius: 15px;
+}
+@media only screen and (min-width: 768px) { 
+  .video {
+    max-height: 600px;
+  }
+  
+}
+
+
+/* --- Hero text sizes ---*/
+@media only screen and (max-width: 768px) { 
+  .hero-title {
+    font-size: 3em;
+    font-weight: 700;
+    margin-bottom: 3rem;
+  }
+  .hero-text {
+    font-size: 1.5em;
+    font-weight: 600;
+    padding-bottom: 8rem;
+  }
+}
+@media only screen and (max-width: 768px) and (min-height: 768px) { 
+  .hero-title {
+    font-size: 3em;
+    font-weight: 700;
+    margin-bottom: 3rem;
+    padding-top: 3rem;
+  }
+  .hero-text {
+    font-size: 1.5em;
+    font-weight: 600;
+    padding-bottom: 16rem;
+  }
+  
+}
+
+@media only screen and (min-width: 768px) {
+  .hero-title {
+    font-size: 4em;
+    font-weight: 700;
+    margin-bottom: 4rem;
+  }
+  .hero-text {
+    font-size: 1.5em;
+    font-weight: 600;
+    padding-bottom: 16rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .hero-title {
+    font-size: 5em;
+    font-weight: 700;
+    margin-bottom: 3rem;
+  }
+  .hero-text {
+    font-size: 2.2em;
+    font-weight: 600;
+  }
+}
+@media only screen and (min-width: 1536px) {
+  .hero-title {
+    font-size: 5em;
+    font-weight: 700;
+    margin-bottom: 8rem;
+  }
+  .hero-text {
+    font-size: 2.2em;
+    font-weight: 600;
+  }
+}
+/* --- Hero text sizes END ---*/
+
+.home-thumb-img {
+  width: 100%; /* Hacemos que el div ocupe todo el ancho disponible */
+  /* height: 0;  */
+  height: 100%;
+  padding-top: 100%; 
+  position: relative; 
+  /* border-radius: 10px; */
+}
+.thumb-img {
+  position: absolute; /* Establecemos posición absoluta para que la imagen se ajuste al contenedor */
+  top: 0; /* La imagen se posiciona en la parte superior del contenedor */
+  left: 0; /* La imagen se posiciona en la parte izquierda del contenedor */
+  width: 100%; /* La imagen ocupa todo el ancho del contenedor */
+  height: 100%; /* La imagen ocupa toda la altura del contenedor */
+  object-fit: cover;  /* Mantenemos la relación de aspecto sin deformar */
+  /* padding: 10px 5px; */
+  padding: 5px;
+}
+
+.home-thumb-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.img-container {
+  aspect-ratio: 16/9;
+  /* overflow: hidden; */
+}
+
+
+@media only screen and (min-width: 1024px) {
+.img-container {
+  aspect-ratio:16/12;
+  min-height: 300px;
+}}
+
+/* @media only screen and (min-width: 1280px) {
+.img-container {
+  aspect-ratio:16/12;
+  min-height: 400px;
+}} */
+
+.responsive-img {
+  width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+  filter: drop-shadow(0px 0px 5px rgba(82, 82, 82, 0.9));
+}
+
+
+@media only screen and (min-width: 500px) and (max-width: 768px) {
+  .home-thumb-section {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .home-thumb-section {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+/* ========================= FOOTER STYLES ====================== */
+
+footer {
+  height: 170px;
+  margin-top: -170px;
+  background-color: black;
+  opacity: .7;
+}
+
+.textarea-sizing {
+  field-sizing: content;
+  max-height: 300px;
+}
+
