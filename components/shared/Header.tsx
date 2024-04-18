@@ -56,7 +56,7 @@ const Header = () => {
       <div className="headerWrapper flex items-center justify-between">
         <Link href="/" className="w-36" onClick={handleLinkClick("/")}>
           <Image
-            src="assets/images/rdl-logo-white.svg"
+            src="https://raw.githubusercontent.com/refugio-del-lobo/rdl-website/main/public/assets/images/rdl-logo-white.svg"
             width={128}
             height={128}
             alt="logo de Refugio del Lobo"
