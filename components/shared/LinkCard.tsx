@@ -14,23 +14,23 @@ const LinkCard = ({
   className?: string
 }) => {
   return (
-    <div className={`max-w-[700px] h-[183px] lg:h-[200px] flex items-center justify-center rounded-xl opacity-layer-70 overflow-hidden drop-shadow-lg border-orange-100 border-2 ${className}`}>
+    <div
+      className={`max-w-[700px] h-[183px] lg:h-[200px] flex items-center justify-center rounded-xl opacity-layer-70 overflow-hidden drop-shadow-lg border-orange-100 border-2 ${className} relative`}
+    >
       <Link href={href}>
-        <div>
-          <Image
-            src={imgSrc}
-            width={500}
-            height={500}
-            alt="habitaciones"
-            className='object-cover'
-          />
-          <p className="absolute top-[45%] right-0 z-40 pr-4 font-semibold">
-            {text}
-          </p>
-          <p className="absolute bottom-2 right-0 z-40 pr-4 font-semibold text-gray-700">
-            ver mas ➡
-          </p>
-        </div>
+        <Image
+          src={imgSrc}
+          width={500}
+          height={500}
+          alt="habitaciones"
+          className="object-cover"
+        />
+        <p className="absolute top-[45%] right-0 z-40 pr-4 font-semibold">
+          {text}
+        </p>
+        <p className="absolute bottom-2 right-0 z-40 pr-4 font-semibold text-gray-700">
+          ver mas ➡
+        </p>
         <div className="absolute right-[-150px] top-[-55px]  md:top-[-60px] w-[300px] h-[300px] opacity-layer-90 rounded-[50%] z-30"></div>
         <div className="absolute right-[-150px] top-[-55px]  md:top-[-60px] w-[300px] h-[300px] opacity-layer-70 rounded-[50%] z-30"></div>
       </Link>
