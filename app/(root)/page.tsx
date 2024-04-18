@@ -28,7 +28,7 @@ export default function Home() {
               muted
               loop
               playsInline
-              // controls
+              controls
               preload="true"
               className="video"
             ></video>
