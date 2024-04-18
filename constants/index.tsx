@@ -9,6 +9,10 @@ export const headerLinks = [
     route: '/nosotros'
   },
   {
+    label: 'Instalaciones',
+    route: '/instalaciones'
+  },
+  {
     label: 'Propuestas',
     route: '/propuestas'
   },

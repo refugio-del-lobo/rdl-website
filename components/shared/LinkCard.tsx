@@ -31,8 +31,8 @@ const LinkCard = ({
         <p className="absolute bottom-2 right-0 z-40 pr-4 font-semibold text-gray-700">
           ver mas ➡
         </p>
-        <div className="absolute right-[-150px] top-[-55px]  md:top-[-60px] w-[300px] h-[300px] opacity-layer-90 rounded-[50%] z-30"></div>
-        <div className="absolute right-[-150px] top-[-55px]  md:top-[-60px] w-[300px] h-[300px] opacity-layer-70 rounded-[50%] z-30"></div>
+        <div className="absolute right-[-150px] top-[-55px]  md:top-[-55px] w-[300px] h-[300px] opacity-layer-90 rounded-[50%] z-30"></div>
+        <div className="absolute right-[-150px] top-[-55px]  md:top-[-55px] w-[300px] h-[300px] opacity-layer-70 rounded-[50%] z-30"></div>
       </Link>
     </div>
   )

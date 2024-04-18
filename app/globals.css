@@ -273,6 +273,17 @@ header {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
+/* ==================== Image Gallery STYLES ================= */
+
+/* .gallery-img-hover {
+    transition: all linear .15s;
+  }
+  
+  .gallery-img-hover:hover {
+    transform: scale(1.1);
+  } */
+
+
 
 /* ========================= FOOTER STYLES ====================== */
 
