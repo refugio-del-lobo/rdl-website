@@ -47,7 +47,7 @@ const Instalaciones = () => {
                 Exterior
               </h3>
               <div className="flex flex-wrap justify-evenly gap-10">
-                <LinkCard text="Fogoneros" href="/instalaciones" imgSrc="https://raw.githubusercontent.com/refugio-del-lobo/rdl-website/main/public/assets/images/exterior/fogoneros/fogoneros_09.jpg"/>
+                <LinkCard text="Fogoneros" href="/instalaciones/fogoneros" imgSrc="https://raw.githubusercontent.com/refugio-del-lobo/rdl-website/main/public/assets/images/exterior/fogoneros/fogoneros_09.jpg"/>
                 <LinkCard
                   text="Playita"
                   href="/instalaciones/playita"
