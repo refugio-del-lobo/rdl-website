@@ -6,7 +6,7 @@ import Link from "next/link"
 
 export default function Home() {
   return (
-    <div className=" bg-casa-lejos-bg bg-center">
+    <div className="bg-casa-lejos-bg bg-cover bg-center">
       <div className="w-full h-full opacity-layer-70 hf-paddings">
         <div className="wrapper h-screen flex flex-col justify-between md:gap-0">
           <h1 className="tracking-wide drop-shadow-md hero-title pt-4 md:pt-12">

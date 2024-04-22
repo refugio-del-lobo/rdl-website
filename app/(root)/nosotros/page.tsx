@@ -9,7 +9,7 @@ const Nosotros = () => {
   }, [])
 
   return (
-    <div className="w-full h-full flex flex-col justify-center bg-nosotros-bg bg-center">
+    <div className="w-full h-full flex flex-col justify-center bg-nosotros-bg bg-cover bg-center">
       <div className="w-full h-full hf-paddings opacity-layer-70">
         <div className="wrapper h-full">
           <div className="opacity-layer-70">

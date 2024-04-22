@@ -1,6 +1,9 @@
 import React, { ReactElement } from "react"
 import { galleryImagesUrls } from "../../../../public/assets/js/galleryImagesUrls"
 import Image from "next/image.js"
+import Link from "next/link"
+import { Button } from "@/components/ui/button"
+import ImgGroup from "@/components/shared/GalleryImgGroup"
 type Params = {
   params: {
     houseSectionId: string
@@ -82,94 +85,36 @@ export default function HouseSectionPage({
                     cinco camas, cuatro cuchetas y un somier.
                   </p>
                 </div>
-
-                {/**************   HABTACIONES VERANO   **************/}
-                <div>
-                  <h2 className="text-center text-3xl pb-2">Verano</h2>
-                  <div className="flex gap-2 md:gap-6 flex-wrap justify-around my-6">
-                    {galleryImagesUrls?.habitaciones?.verano?.map(
-                      (url: string) => (
-                        <div
-                          key={url}
-                          className={`p-1 drop-shadow-xl border border-white bg-white rounded-xl mb-6 transition-transform duration-300 ease-in-out transform scale-100 hover:scale-110`}
-                        >
-                          <Image
-                            src={url}
-                            width={500}
-                            height={500}
-                            alt="imagen de galeria"
-                            className="h-[200px] md:h-[300px] w-[300px] object-cover rounded-xl overflow-hidden drop-shadow-xl border"
-                          />
-                        </div>
-                      )
-                    )}
+                  <div className="mt-4 opacity-layer-90 w-fit rounded-md hover:bg-gray-200">
+                    <Button variant={"default"}>
+                      <Link href={"/instalaciones"}>
+                        ⬅ Regresar a instalaciones
+                      </Link>
+                    </Button>
                   </div>
+                <div>
+                  <h2 className="text-center text-3xl pb-2 mt-6">Verano</h2>
+                  <ImgGroup
+                    imgGroupLinks={galleryImagesUrls?.habitaciones?.verano}
+                  />
                 </div>
-                {/**************   HABTACIONES OTOÑO   **************/}
                 <div>
                   <h2 className="text-center text-3xl pb-2">Otoño</h2>
-                  <div className="flex gap-6 flex-wrap justify-around my-6">
-                    {galleryImagesUrls?.habitaciones?.otono?.map(
-                      (url: string) => (
-                        <div
-                          key={url}
-                          className={`p-1 drop-shadow-xl border border-white bg-white rounded-xl mb-6 transition-transform duration-300 ease-in-out transform scale-100 hover:scale-110`}
-                        >
-                          <Image
-                            src={url}
-                            width={500}
-                            height={500}
-                            alt="imagen de galeria"
-                            className="h-[300px] w-[300px] object-cover rounded-xl overflow-hidden drop-shadow-xl border"
-                          />
-                        </div>
-                      )
-                    )}
-                  </div>
+                  <ImgGroup
+                    imgGroupLinks={galleryImagesUrls?.habitaciones?.otono}
+                  />
                 </div>
-                {/**************   HABTACIONES INVIERNO   **************/}
                 <div>
                   <h2 className="text-center text-3xl pb-2">Invierno</h2>
-                  <div className="flex gap-6 flex-wrap justify-around my-6">
-                    {galleryImagesUrls?.habitaciones?.invierno?.map(
-                      (url: string) => (
-                        <div
-                          key={url}
-                          className={`p-1 drop-shadow-xl border border-white bg-white rounded-xl mb-6 transition-transform duration-300 ease-in-out transform scale-100 hover:scale-110`}
-                        >
-                          <Image
-                            src={url}
-                            width={500}
-                            height={500}
-                            alt="imagen de galeria"
-                            className="h-[300px] w-[300px] object-cover rounded-xl overflow-hidden drop-shadow-xl border"
-                          />
-                        </div>
-                      )
-                    )}
-                  </div>
+                  <ImgGroup
+                    imgGroupLinks={galleryImagesUrls?.habitaciones?.invierno}
+                  />
                 </div>
-                {/**************   HABTACIONES PRIMAVERA   **************/}
                 <div>
                   <h2 className="text-center text-3xl pb-2">Primavera</h2>
-                  <div className="flex gap-6 flex-wrap justify-around my-6">
-                    {galleryImagesUrls?.habitaciones?.primavera?.map(
-                      (url: string) => (
-                        <div
-                          key={url}
-                          className={`p-1 drop-shadow-xl border border-white bg-white rounded-xl mb-6 transition-transform duration-300 ease-in-out transform scale-100 hover:scale-110`}
-                        >
-                          <Image
-                            src={url}
-                            width={500}
-                            height={500}
-                            alt="imagen de galeria"
-                            className="h-[300px] w-[300px] object-cover rounded-xl overflow-hidden drop-shadow-xl border"
-                          />
-                        </div>
-                      )
-                    )}
-                  </div>
+                  <ImgGroup
+                    imgGroupLinks={galleryImagesUrls?.habitaciones?.primavera}
+                  />
                 </div>
               </div>
             )}
@@ -181,22 +126,14 @@ export default function HouseSectionPage({
                     cuatro comidas.
                   </p>
                 </div>
-                <div className="flex gap-6 flex-wrap justify-around my-6">
-                  {galleryImagesUrls?.cocina?.map((url: string) => (
-                    <div
-                      key={url}
-                      className={`p-1 drop-shadow-xl border border-white bg-white rounded-xl mb-6 transition-transform duration-300 ease-in-out transform scale-100 hover:scale-110`}
-                    >
-                      <Image
-                        src={url}
-                        width={500}
-                        height={500}
-                        alt="imagen de galeria"
-                        className="h-[300px] w-[300px] object-cover rounded-xl overflow-hidden drop-shadow-xl border"
-                      />
-                    </div>
-                  ))}
+                <div className="mt-4 opacity-layer-90 w-fit rounded-md hover:bg-gray-200">
+                  <Button variant={"default"}>
+                    <Link href={"/instalaciones"}>
+                      ⬅ Regresar a instalaciones
+                    </Link>
+                  </Button>
                 </div>
+                <ImgGroup imgGroupLinks={galleryImagesUrls?.cocina} />
               </div>
             )}
             {houseSectionId == "banos" && (
@@ -207,23 +144,15 @@ export default function HouseSectionPage({
                     en el primer piso y un cuarto baño ubicado en el quincho.
                   </p>
                   <p> Todos cuentan con ducha.</p>
+                </div>{" "}
+                <div className="mt-4 opacity-layer-90 w-fit rounded-md hover:bg-gray-200">
+                  <Button variant={"default"}>
+                    <Link href={"/instalaciones"}>
+                      ⬅ Regresar a instalaciones
+                    </Link>
+                  </Button>
                 </div>
-                <div className="flex gap-6 flex-wrap justify-around my-6">
-                  {galleryImagesUrls?.banos?.map((url: string) => (
-                    <div
-                      key={url}
-                      className={`p-1 drop-shadow-xl border border-white bg-white rounded-xl mb-6 transition-transform duration-300 ease-in-out transform scale-100 hover:scale-110`}
-                    >
-                      <Image
-                        src={url}
-                        width={500}
-                        height={500}
-                        alt="imagen de galeria"
-                        className="h-[300px] w-[300px] object-cover rounded-xl overflow-hidden drop-shadow-xl border"
-                      />
-                    </div>
-                  ))}
-                </div>
+                <ImgGroup imgGroupLinks={galleryImagesUrls?.banos} />
               </div>
             )}
             {houseSectionId == "livings" && (
@@ -235,22 +164,14 @@ export default function HouseSectionPage({
                     una mayor comodidad.
                   </p>
                 </div>
-                <div className="flex gap-6 flex-wrap justify-around my-6">
-                  {galleryImagesUrls?.livings?.map((url: string) => (
-                    <div
-                      key={url}
-                      className={`p-1 drop-shadow-xl border border-white bg-white rounded-xl mb-6 transition-transform duration-300 ease-in-out transform scale-100 hover:scale-110`}
-                    >
-                      <Image
-                        src={url}
-                        width={500}
-                        height={500}
-                        alt="imagen de galeria"
-                        className="h-[300px] w-[300px] object-cover rounded-xl overflow-hidden drop-shadow-xl border"
-                      />
-                    </div>
-                  ))}
+                <div className="mt-4 opacity-layer-90 w-fit rounded-md hover:bg-gray-200">
+                  <Button variant={"default"}>
+                    <Link href={"/instalaciones"}>
+                      ⬅ Regresar a instalaciones
+                    </Link>
+                  </Button>
                 </div>
+                <ImgGroup imgGroupLinks={galleryImagesUrls?.livings} />
               </div>
             )}
             {houseSectionId == "quincho" && (
@@ -262,22 +183,14 @@ export default function HouseSectionPage({
                     partidos o eventos importantes.
                   </p>
                 </div>
-                <div className="flex gap-6 flex-wrap justify-around my-6">
-                  {galleryImagesUrls?.quincho?.map((url: string) => (
-                    <div
-                      key={url}
-                      className={`p-1 drop-shadow-xl border border-white bg-white rounded-xl mb-6 transition-transform duration-300 ease-in-out transform scale-100 hover:scale-110`}
-                    >
-                      <Image
-                        src={url}
-                        width={500}
-                        height={500}
-                        alt="imagen de galeria"
-                        className="h-[300px] w-[300px] object-cover rounded-xl overflow-hidden drop-shadow-xl border"
-                      />
-                    </div>
-                  ))}
+                <div className="mt-4 opacity-layer-90 w-fit rounded-md hover:bg-gray-200">
+                  <Button variant={"default"}>
+                    <Link href={"/instalaciones"}>
+                      ⬅ Regresar a instalaciones
+                    </Link>
+                  </Button>
                 </div>
+                <ImgGroup imgGroupLinks={galleryImagesUrls?.quincho} />
               </div>
             )}
 
@@ -290,22 +203,14 @@ export default function HouseSectionPage({
                     momentos de una manera calida acompañadas de un buen fuego.
                   </p>
                 </div>
-                <div className="flex gap-6 flex-wrap justify-around my-6">
-                  {galleryImagesUrls?.fogoneros?.map((url: string) => (
-                    <div
-                      key={url}
-                      className={`p-1 drop-shadow-xl border border-white bg-white rounded-xl mb-6 transition-transform duration-300 ease-in-out transform scale-100 hover:scale-110`}
-                    >
-                      <Image
-                        src={url}
-                        width={500}
-                        height={500}
-                        alt="imagen de galeria"
-                        className="h-[300px] w-[300px] object-cover rounded-xl overflow-hidden drop-shadow-xl border"
-                      />
-                    </div>
-                  ))}
+                <div className="mt-4 opacity-layer-90 w-fit rounded-md hover:bg-gray-200">
+                  <Button variant={"default"}>
+                    <Link href={"/instalaciones"}>
+                      ⬅ Regresar a instalaciones
+                    </Link>
+                  </Button>
                 </div>
+                <ImgGroup imgGroupLinks={galleryImagesUrls?.fogoneros} />
               </div>
             )}
             {houseSectionId == "playita" && (
@@ -322,22 +227,14 @@ export default function HouseSectionPage({
                     Lago Lacar.
                   </p>
                 </div>
-                <div className="flex gap-6 flex-wrap justify-around my-6">
-                  {galleryImagesUrls?.playita?.map((url: string) => (
-                    <div
-                      key={url}
-                      className={`p-1 drop-shadow-xl border border-white bg-white rounded-xl mb-6 transition-transform duration-300 ease-in-out transform scale-100 hover:scale-110`}
-                    >
-                      <Image
-                        src={url}
-                        width={500}
-                        height={500}
-                        alt="imagen de galeria"
-                        className="h-[300px] w-[300px] object-cover rounded-xl overflow-hidden drop-shadow-xl border"
-                      />
-                    </div>
-                  ))}
+                <div className="mt-4 opacity-layer-90 w-fit rounded-md hover:bg-gray-200">
+                  <Button variant={"default"}>
+                    <Link href={"/instalaciones"}>
+                      ⬅ Regresar a instalaciones
+                    </Link>
+                  </Button>
                 </div>
+                <ImgGroup imgGroupLinks={galleryImagesUrls?.playita} />
               </div>
             )}
             {houseSectionId == "invernadero" && (
@@ -349,22 +246,14 @@ export default function HouseSectionPage({
                     deleitarnos en las comidas.
                   </p>
                 </div>
-                <div className="flex gap-6 flex-wrap justify-around my-6">
-                  {galleryImagesUrls?.invernadero?.map((url: string) => (
-                    <div
-                      key={url}
-                      className={`p-1 drop-shadow-xl border border-white bg-white rounded-xl mb-6 transition-transform duration-300 ease-in-out transform scale-100 hover:scale-110`}
-                    >
-                      <Image
-                        src={url}
-                        width={500}
-                        height={500}
-                        alt="imagen de galeria"
-                        className="h-[300px] w-[300px] object-cover rounded-xl overflow-hidden drop-shadow-xl border"
-                      />
-                    </div>
-                  ))}
+                <div className="mt-4 opacity-layer-90 w-fit rounded-md hover:bg-gray-200">
+                  <Button variant={"default"}>
+                    <Link href={"/instalaciones"}>
+                      ⬅ Regresar a instalaciones
+                    </Link>
+                  </Button>
                 </div>
+                <ImgGroup imgGroupLinks={galleryImagesUrls?.invernadero} />
               </div>
             )}
             {houseSectionId == "deck" && (
@@ -379,22 +268,14 @@ export default function HouseSectionPage({
                     momento pida.
                   </p>
                 </div>
-                <div className="flex gap-6 flex-wrap justify-around my-6">
-                  {galleryImagesUrls?.deck?.map((url: string) => (
-                    <div
-                      key={url}
-                      className={`p-1 drop-shadow-xl border border-white bg-white rounded-xl mb-6 transition-transform duration-300 ease-in-out transform scale-100 hover:scale-110`}
-                    >
-                      <Image
-                        src={url}
-                        width={500}
-                        height={500}
-                        alt="imagen de galeria"
-                        className="h-[300px] w-[300px] object-cover rounded-xl overflow-hidden drop-shadow-xl border"
-                      />
-                    </div>
-                  ))}
+                <div className="mt-4 opacity-layer-90 w-fit rounded-md hover:bg-gray-200">
+                  <Button variant={"default"}>
+                    <Link href={"/instalaciones"}>
+                      ⬅ Regresar a instalaciones
+                    </Link>
+                  </Button>
                 </div>
+                <ImgGroup imgGroupLinks={galleryImagesUrls?.deck} />
               </div>
             )}
             {houseSectionId == "zona-deportiva" && (
@@ -407,22 +288,14 @@ export default function HouseSectionPage({
                   <p>Habilitadas para usar con previa reservación.</p>
                   <p> Disponemos de raquetas y pelotas para los huespedes. </p>
                 </div>
-                <div className="flex gap-6 flex-wrap justify-around my-6">
-                  {galleryImagesUrls?.zonaDeportiva?.map((url: string) => (
-                    <div
-                      key={url}
-                      className={`p-1 drop-shadow-xl border border-white bg-white rounded-xl mb-6 transition-transform duration-300 ease-in-out transform scale-100 hover:scale-110`}
-                    >
-                      <Image
-                        src={url}
-                        width={500}
-                        height={500}
-                        alt="imagen de galeria"
-                        className="h-[300px] w-[300px] object-cover rounded-xl overflow-hidden drop-shadow-xl border"
-                      />
-                    </div>
-                  ))}
+                <div className="mt-4 opacity-layer-90 w-fit rounded-md hover:bg-gray-200">
+                  <Button variant={"default"}>
+                    <Link href={"/instalaciones"}>
+                      ⬅ Regresar a instalaciones
+                    </Link>
+                  </Button>
                 </div>
+                <ImgGroup imgGroupLinks={galleryImagesUrls?.zonaDeportiva} />
               </div>
             )}
             {houseSectionId == "matera" && (
@@ -440,22 +313,14 @@ export default function HouseSectionPage({
                   </p>
                   <p>Este espacio no se encuentra dentro de la casa.</p>
                 </div>
-                <div className="flex gap-6 flex-wrap justify-around my-6">
-                  {galleryImagesUrls?.matera?.map((url: string) => (
-                    <div
-                      key={url}
-                      className={`p-1 drop-shadow-xl border border-white bg-white rounded-xl mb-6 transition-transform duration-300 ease-in-out transform scale-100 hover:scale-110`}
-                    >
-                      <Image
-                        src={url}
-                        width={500}
-                        height={500}
-                        alt="imagen de galeria"
-                        className="h-[300px] w-[300px] object-cover rounded-xl overflow-hidden drop-shadow-xl border"
-                      />
-                    </div>
-                  ))}
+                <div className="mt-4 opacity-layer-90 w-fit rounded-md hover:bg-gray-200">
+                  <Button variant={"default"}>
+                    <Link href={"/instalaciones"}>
+                      ⬅ Regresar a instalaciones
+                    </Link>
+                  </Button>
                 </div>
+                <ImgGroup imgGroupLinks={galleryImagesUrls?.matera} />
               </div>
             )}
           </div>

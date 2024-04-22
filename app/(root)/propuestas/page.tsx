@@ -17,7 +17,7 @@ const Propuestas = () => {
   }
 
   return (
-    <div className="w-full h-full bg-nosotros-bg bg-center">
+    <div className="w-full h-full bg-nosotros-bg bg-cover bg-center">
       <div className="w-full h-full min-h-screen hf-paddings opacity-layer-70">
         <div className="wrapper-propuestas">
           <div className="rounded-md p-2">

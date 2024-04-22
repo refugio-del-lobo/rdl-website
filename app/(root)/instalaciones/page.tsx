@@ -5,7 +5,7 @@ import React from "react"
 const Instalaciones = () => {
   return (
     <>
-      <div className=" bg-nosotros-bg bg-center">
+      <div className=" bg-nosotros-bg bg-cover bg-center">
         <div className="w-full h-full min-h-screen opacity-layer-70 hf-paddings ">
           <h1 className="text-3xl md:text-5xl xl:text-7xl text-center pb-6 md:pb-12 py-5">
             Instalaciones

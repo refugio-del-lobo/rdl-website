@@ -86,7 +86,7 @@ const Contacto = () => {
   }, [])
 
   return (
-    <div className="bg-contacto-bg bg-center">
+    <div className="bg-contacto-bg bg-cover bg-center">
       <div className="w-full min-h-screen opacity-layer-70 hf-paddings">
         <div className="wrapper min-h-screen">
           <div className="flex justify-center">
