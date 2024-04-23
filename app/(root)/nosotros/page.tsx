@@ -19,7 +19,7 @@ const Nosotros = () => {
               </h1>
               <div className="text-xl xl:text-2xl flex flex-col gap-6 text-justify">
                 <div className="flex flex-col lg:flex-row gap-3 items-center">
-                  <p className="lg:w-9/12 lg:px-12 2xl:px-24 drop-shadow-md">
+                  {/* <p className="lg:w-9/12 lg:px-12 2xl:px-24 drop-shadow-md">
                     Somos tu{" "}
                     <span className="font-semibold">casa boutique de montaña </span>
                      ubicada en la entrada de {" "} 
@@ -27,6 +27,9 @@ const Nosotros = () => {
                     San Martín de los Andes.
                     </span>
                     <span className="text-gray-500 text-sm"> (A tan solo 10 minutos del aeropuerto y a 15 del centro)</span>
+                  </p> */}
+                  <p className="lg:w-9/12 lg:px-12 2xl:px-24 drop-shadow-md">
+                  Sumérgete en la serenidad de los Andes en nuestra exclusiva <span className="font-semibold">casa boutique</span> emplazada en un barrio cerrado <span className="font-semibold">entre majestuosas montañas</span>, nuestra morada encarna el misterio y la esencia de la naturaleza. Descubre un refugio <span className="font-semibold">donde el tiempo se detiene y la calma te rodea</span>, ofreciéndote una experiencia auténtica y única.
                   </p>
                   <div className="flex justify-center max-w-[500px] max-h-[500px] drop-shadow-2xl">
                     <div className="rounded-sm img-container flex">
