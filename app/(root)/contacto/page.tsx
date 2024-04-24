@@ -58,13 +58,29 @@ const Contacto = () => {
   const handleSubmit = async (values: z.infer<typeof formSchema>) => {
 
     try {
-      await new Promise((resolve) => setTimeout(resolve, 2000));
+      // await new Promise((resolve) => setTimeout(resolve, 2000));
       
       console.log("Submited form")
       console.log(" ******** values ********", values)
       console.log(" ******** values.name ********", values.name)
       console.log(" ******** values.email ********", values.email)
       console.log(" ******** values.comment ********", values.comment)
+
+      
+      
+      //ENVIAMOS EMAIL
+      const contactEmail = await fetch('/api/send', {
+        method:'POST',
+        body: JSON.stringify({
+          nombre: values.name,
+          email: values.email,
+          comentario: values.comment
+        }),
+      })
+      //Recibimos data devuelta por la api de RESEND
+      const data = await contactEmail.json()
+      console.log("DATA", data);
+      
 
       // throw new Error();
     } catch (error) {
