@@ -69,7 +69,7 @@ const Contacto = () => {
       
       
       //ENVIAMOS EMAIL
-      const contactEmail = await fetch('/api/send', {
+      const contactEmail = await fetch('/rdl-website/api/send', {
         method:'POST',
         body: JSON.stringify({
           nombre: values.name,
