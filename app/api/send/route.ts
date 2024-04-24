@@ -9,9 +9,9 @@ const resend = new Resend('re_SABWpTQw_PhpjFiMTVmx7gW1JntkDqj4V')
 export async function POST(request: Request) {  
   try {
     const { nombre, email, comentario } = await request.json();
-    // console.log("nombre",nombre);
-    // console.log("email",email);
-    // console.log("comentario",comentario);
+    console.log("nombre",nombre);
+    console.log("email",email);
+    console.log("comentario",comentario);
 
     const data = await resend.emails.send({
       from: 'Formulario de contacto - refugiodellobo.com <onboarding@resend.dev>',
@@ -24,7 +24,7 @@ export async function POST(request: Request) {
       status:200
     })
   } catch (error) {
-    return NextResponse.json({message: "Error"}, {
+    return NextResponse.json({message: "Error POST"}, {
       status:500
     })
   }

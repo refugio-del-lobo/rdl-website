@@ -69,14 +69,18 @@ const Contacto = () => {
       
       
       //ENVIAMOS EMAIL
-      const contactEmail = await fetch('/rdl-website/api/send', {
+      const contactEmail = await fetch('/api/send', {
         method:'POST',
+        headers: {
+          'Content-Type': 'application/json' // Especifica que los datos son JSON
+        },
         body: JSON.stringify({
           nombre: values.name,
           email: values.email,
           comentario: values.comment
         }),
       })
+
       //Recibimos data devuelta por la api de RESEND
       const data = await contactEmail.json()
       console.log("DATA", data);
