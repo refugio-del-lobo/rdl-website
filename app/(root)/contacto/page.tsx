@@ -55,6 +55,8 @@ const Contacto = () => {
   
   const { register, formState:{errors, isSubmitting}, setError } = form;
 
+  const apiUrl = process.env.NEXT_PUBLIC_API_URL || '/api/send';
+
   const handleSubmit = async (values: z.infer<typeof formSchema>) => {
 
     try {
@@ -69,7 +71,7 @@ const Contacto = () => {
       
       
       //ENVIAMOS EMAIL
-      const contactEmail = await fetch('/api/send', {
+      const contactEmail = await fetch(apiUrl, {
         method:'POST',
         headers: {
           'Content-Type': 'application/json' // Especifica que los datos son JSON
