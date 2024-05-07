@@ -53,7 +53,7 @@ export default function HouseSectionPage({
       <div className=" bg-casa-lejos-bg bg-cover">
         <div className="w-full h-full min-h-screen opacity-layer-70 hf-paddings ">
           <h1 className="text-3xl md:text-5xl xl:text-7xl text-center pb-6 md:pb-8 py-5">
-            Galeria de imagenes{" "}
+            {/* Galeria de imagenes{" "} */}
             {houseSectionId == "banos"
               ? "Baños"
               : capitalizarPalabras(houseSectionId)}
