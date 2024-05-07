@@ -11,13 +11,15 @@ const GalleryImgGroup = ({
   const [modalIsShown, setModalIsShown] = useState(false)
   const [selectedImg, setSelectedImg] = useState<string>("")
 
-  const toggleModal = () => {
-    setModalIsShown(!modalIsShown)
+  const closeModal = () => {
+    document.body.style.overflow = 'auto';
+    setModalIsShown(false)
   }
 
   const openNewModal = (url:string) => {
     setSelectedImg(url)
-    toggleModal()
+    document.body.style.overflow = 'hidden';
+    setModalIsShown(true)
   }
 
   return (
@@ -44,7 +46,7 @@ const GalleryImgGroup = ({
 
       {modalIsShown && (
         <ImgGalleryModal
-          toggleModalProp={toggleModal}
+          toggleModalProp={closeModal}
           imgGroupLinksProp={imgGroupLinks}
           selectedImgProp={selectedImg}
         />
