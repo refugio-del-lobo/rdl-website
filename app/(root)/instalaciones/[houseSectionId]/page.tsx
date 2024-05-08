@@ -94,12 +94,12 @@ export default function HouseSectionPage({
                     </Link>
                   </Button>
                 </div>
-                <div className="flex gap-4 flex-wrap justify-center py-4">
+                <div className="flex gap-4 flex-wrap justify-around py-4">
                   <div>
                     <h2 className="text-center text-3xl">Verano</h2>
                     <GalleryImgGroup
                       imgGroupLinks={galleryImagesUrls?.habitaciones?.verano}
-                      single
+                      single={true}
                     />
                   </div>
                   <div>
@@ -109,14 +109,14 @@ export default function HouseSectionPage({
                     <GalleryImgGroup
                       imgGroupLinks={galleryImagesUrls?.habitaciones?.otono}
                       imgGroupLinks2={galleryImagesUrls?.habitaciones?.primavera}
-                      single
+                      single={true}
                     />
                   </div>
                   <div>
                     <h2 className="text-center text-3xl">Invierno</h2>
                     <GalleryImgGroup
                       imgGroupLinks={galleryImagesUrls?.habitaciones?.invierno}
-                      single
+                      single={true}
                     />
                   </div>
                   {/* <div>

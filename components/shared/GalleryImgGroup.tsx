@@ -3,12 +3,11 @@ import Image from "next/image"
 import React, { useEffect, useState } from "react"
 import ImgGalleryModal from "./ImgGalleryModal"
 import Polaroid from "./Polaroid"
-import { log } from "console"
 
 const GalleryImgGroup = ({
   imgGroupLinks,
-  single,
-  imgGroupLinks2,
+  single = false,
+  imgGroupLinks2 = [],
 }: {
   imgGroupLinks: string[] | undefined
   imgGroupLinks2?: string[] | undefined
@@ -39,15 +38,13 @@ const GalleryImgGroup = ({
     if (imgGroupLinks && imgGroupLinks2) {
       setConcatLinks([...imgGroupLinks, ...imgGroupLinks2])
     }
-    
-  }, [imgGroupLinks, imgGroupLinks2])
-  
-  console.log(concatLinks);
+  }, [])
+
   return (
     <>
       {/* *******************   GalleryImgGroup Inicial ***************** */}
 
-      {imgGroupLinks && imgGroupLinks2 && !single && (
+      {imgGroupLinks && imgGroupLinks2 && single == false && (
         <div className="flex gap-6 flex-wrap justify-around my-6">
           <div onClick={() => openNewModal(concatLinks[0])}>
             <Polaroid src={concatLinks[0]} />
@@ -60,7 +57,7 @@ const GalleryImgGroup = ({
           </div>
         </div>
       )}
-      {imgGroupLinks && imgGroupLinks2 && single && (
+      {imgGroupLinks && imgGroupLinks2 && single == true && (
         <div className="flex gap-6 flex-wrap justify-around my-6">
           <div onClick={() => openNewModal(concatLinks[0])}>
             <Polaroid src={concatLinks[0]} />
@@ -68,7 +65,7 @@ const GalleryImgGroup = ({
         </div>
       )}
 
-      {!imgGroupLinks && firstlLinks && !single && (
+      {!imgGroupLinks && firstlLinks && single == false && (
         <div className="flex gap-6 flex-wrap justify-around my-6">
           <div onClick={() => openNewModal(firstlLinks[0])}>
             <Polaroid src={firstlLinks[0]} />
@@ -81,7 +78,7 @@ const GalleryImgGroup = ({
           </div>
         </div>
       )}
-      {!imgGroupLinks2 && firstlLinks && single && (
+      {!imgGroupLinks2 && firstlLinks && single == true && (
         <div className="flex gap-6 flex-wrap justify-around my-6">
           <div onClick={() => openNewModal(firstlLinks[0])}>
             <Polaroid src={firstlLinks[0]} />
@@ -89,14 +86,14 @@ const GalleryImgGroup = ({
         </div>
       )}
 
-      {modalIsShown && !imgGroupLinks2 &&(
+      {modalIsShown && !imgGroupLinks2 && (
         <ImgGalleryModal
           toggleModalProp={closeModal}
           imgGroupLinksProp={imgGroupLinks}
           selectedImgProp={selectedImg}
         />
       )}
-      {modalIsShown && imgGroupLinks2 &&(
+      {modalIsShown && imgGroupLinks2 && (
         <ImgGalleryModal
           toggleModalProp={closeModal}
           imgGroupLinksProp={concatLinks}
