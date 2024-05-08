@@ -4,19 +4,19 @@ import React from "react"
 interface PolaroidProps {
   title?: string;
   text?: string;
-  src?: string;
+  src: string;
 }
 
 const Polaroid: React.FC<PolaroidProps> = ({ title="", text="", src="https://picsum.photos/600" }) => {
   return (
-    <div className="drop-shadow-2xl">
+    <div className="drop-shadow-2xl cursor-pointer">
       <figure className="w-[300px] h-[360px] relative bg-[#d6d1d1] pt-[19px] pr-[19px] pl-[19px] pb-[85px] rounded-sm drop-shadow-xl">
         <Image
           src={src}
           width={500}
           height={500}
           alt="image"
-          className="w-full h-full object-cover rounded-sm"
+          className="w-full h-full object-cover rounded-sm drop-shadow-sm"
         />
         <figcaption className="m-1 text-end text-[#2c2c2c]">
           <p className="text-md font-sans font-medium">{title}</p>

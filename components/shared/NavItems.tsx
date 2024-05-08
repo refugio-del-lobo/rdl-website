@@ -8,11 +8,11 @@ const NavItems = ({setCurrentLink, currentLink, clicks }: any) => {
   // console.log("currentLink 8", currentLink)
 
   const pathname = usePathname()
-  console.log(pathname)
+  // console.log(pathname)
 
   const router = useRouter()
   const [selectedLink, setSelectedLink] = useState<any>(pathname)
-  console.log("selectedLink", selectedLink)
+  // console.log("selectedLink", selectedLink)
 
   const handleLinkClick =
     (href: string): React.MouseEventHandler<HTMLAnchorElement> =>
