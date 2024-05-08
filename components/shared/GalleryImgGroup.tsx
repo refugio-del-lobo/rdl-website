@@ -6,8 +6,10 @@ import Polaroid from "./Polaroid"
 
 const GalleryImgGroup = ({
   imgGroupLinks,
+  single
 }: {
   imgGroupLinks: string[] | undefined
+  single?: boolean
 }) => {
   const [modalIsShown, setModalIsShown] = useState(false)
   const [selectedImg, setSelectedImg] = useState<string>("")
@@ -32,7 +34,7 @@ const GalleryImgGroup = ({
   return (
     <>
       {/* *******************   GalleryImgGroup Inicial ***************** */}
-      {firstlLinks && (
+      {(firstlLinks && !single) && (
         <div className="flex gap-6 flex-wrap justify-around my-6">
           <div onClick={() => openNewModal(firstlLinks[0])}>
             <Polaroid src={firstlLinks[0]} />
@@ -42,6 +44,13 @@ const GalleryImgGroup = ({
           </div>
           <div onClick={() => openNewModal(firstlLinks[2])}>
             <Polaroid src={firstlLinks[2]} />
+          </div>
+        </div>
+      )}
+      {(firstlLinks && single) && (
+        <div className="flex gap-6 flex-wrap justify-around my-6">
+          <div onClick={() => openNewModal(firstlLinks[0])}>
+            <Polaroid src={firstlLinks[0]} />
           </div>
         </div>
       )}

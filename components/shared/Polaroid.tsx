@@ -4,7 +4,7 @@ import React from "react"
 interface PolaroidProps {
   title?: string;
   text?: string;
-  src: string;
+  src: string | undefined;
 }
 
 const Polaroid: React.FC<PolaroidProps> = ({ title="", text="", src="https://picsum.photos/600" }) => {

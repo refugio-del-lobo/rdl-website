@@ -5,6 +5,7 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import ImgGroup from "@/components/shared/GalleryImgGroup"
 import GalleryImgGroup from "@/components/shared/GalleryImgGroup"
+import Polaroid from "@/components/shared/Polaroid"
 type Params = {
   params: {
     houseSectionId: string
@@ -70,55 +71,64 @@ export default function HouseSectionPage({
                     nombre de una estación del año.
                   </p>
                   <p>
-                    <span className="font-semibold">Verano:</span> Es la
-                    habitación doble.
+                    <span className="font-semibold">Verano:</span> Habitación
+                    doble con opción de 2 camas simples o 1 cama doble.
                   </p>
                   <p>
-                    <span className="font-semibold">Otoño:</span> Tiene cinco
-                    camas, cuatro cuchetas y un somier.
+                    <span className="font-semibold">Otoño y primavera:</span>{" "}
+                    Ambas habitacione spueden adaptarse de 2 a 5 camas.
                   </p>
                   <p>
-                    <span className="font-semibold">Invierno:</span> Tiene seis
-                    camas, tres cuchetas.
+                    <span className="font-semibold">Invierno:</span> Esta
+                    habitación dispone de 5 camas
                   </p>
-                  <p>
+                  {/* <p>
                     <span className="font-semibold">Primavera:</span> Tiene
                     cinco camas, cuatro cuchetas y un somier.
-                  </p>
+                  </p> */}
                 </div>
-                  <div className="mt-4 opacity-layer-90 w-fit rounded-md hover:bg-gray-200">
-                    <Button variant={"default"}>
-                      <Link href={"/instalaciones"}>
-                        ⬅ Regresar a instalaciones
-                      </Link>
-                    </Button>
+                <div className="mt-4 opacity-layer-90 w-fit rounded-md hover:bg-gray-200">
+                  <Button variant={"default"}>
+                    <Link href={"/instalaciones"}>
+                      ⬅ Regresar a instalaciones
+                    </Link>
+                  </Button>
+                </div>
+                <div className="flex gap-4 flex-wrap justify-center py-4">
+                  <div>
+                    <h2 className="text-center text-3xl">Verano</h2>
+                    <GalleryImgGroup
+                      imgGroupLinks={galleryImagesUrls?.habitaciones?.verano}
+                      single
+                    />
                   </div>
-                <div>
-                  <h2 className="text-center text-3xl pb-2 mt-6">Verano</h2>
-                  <GalleryImgGroup
-                    imgGroupLinks={galleryImagesUrls?.habitaciones?.verano}
-                  />
-                </div>
-                <div>
-                  <h2 className="text-center text-3xl pb-2">Otoño</h2>
-                  <GalleryImgGroup
-                    imgGroupLinks={galleryImagesUrls?.habitaciones?.otono}
-                  />
-                </div>
-                <div>
-                  <h2 className="text-center text-3xl pb-2">Invierno</h2>
-                  <GalleryImgGroup
-                    imgGroupLinks={galleryImagesUrls?.habitaciones?.invierno}
-                  />
-                </div>
-                <div>
-                  <h2 className="text-center text-3xl pb-2">Primavera</h2>
-                  <GalleryImgGroup
-                    imgGroupLinks={galleryImagesUrls?.habitaciones?.primavera}
-                  />
+                  <div>
+                    <h2 className="text-center text-3xl">
+                      Otoño / Primavera
+                    </h2>
+                    <GalleryImgGroup
+                      imgGroupLinks={galleryImagesUrls?.habitaciones?.otono}
+                      single
+                    />
+                  </div>
+                  <div>
+                    <h2 className="text-center text-3xl">Invierno</h2>
+                    <GalleryImgGroup
+                      imgGroupLinks={galleryImagesUrls?.habitaciones?.invierno}
+                      single
+                    />
+                  </div>
+                  {/* <div>
+                    <h2 className="text-center text-3xl pb-2">Primavera</h2>
+                    <GalleryImgGroup
+                      imgGroupLinks={galleryImagesUrls?.habitaciones?.primavera}
+                      single
+                    />
+                  </div> */}
                 </div>
               </div>
             )}
+
             {houseSectionId == "cocina" && (
               <div className=" flex flex-col">
                 <div className="text-xl flex flex-col gap-2 drop-shadow-md">
@@ -254,7 +264,9 @@ export default function HouseSectionPage({
                     </Link>
                   </Button>
                 </div>
-                <GalleryImgGroup imgGroupLinks={galleryImagesUrls?.invernadero} />
+                <GalleryImgGroup
+                  imgGroupLinks={galleryImagesUrls?.invernadero}
+                />
               </div>
             )}
             {houseSectionId == "deck" && (
@@ -296,7 +308,9 @@ export default function HouseSectionPage({
                     </Link>
                   </Button>
                 </div>
-                <GalleryImgGroup imgGroupLinks={galleryImagesUrls?.zonaDeportiva} />
+                <GalleryImgGroup
+                  imgGroupLinks={galleryImagesUrls?.zonaDeportiva}
+                />
               </div>
             )}
             {houseSectionId == "matera" && (
