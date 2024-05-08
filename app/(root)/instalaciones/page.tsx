@@ -54,7 +54,7 @@ const Instalaciones = () => {
                   imgSrc="https://raw.githubusercontent.com/refugio-del-lobo/rdl-website/main/public/assets/images/exterior/playita/playita_06.jpg"
                 />
                 <LinkCard
-                  text="Invernadero"
+                  text="Huerta e Invernadero"
                   href="/instalaciones/invernadero"
                   imgSrc="https://raw.githubusercontent.com/refugio-del-lobo/rdl-website/main/public/assets/images/exterior/invernadero/invernadero_01.jpg"
                 />
