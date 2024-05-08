@@ -4,6 +4,7 @@ import Image from "next/image.js"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import ImgGroup from "@/components/shared/GalleryImgGroup"
+import GalleryImgGroup from "@/components/shared/GalleryImgGroup"
 type Params = {
   params: {
     houseSectionId: string
@@ -94,25 +95,25 @@ export default function HouseSectionPage({
                   </div>
                 <div>
                   <h2 className="text-center text-3xl pb-2 mt-6">Verano</h2>
-                  <ImgGroup
+                  <GalleryImgGroup
                     imgGroupLinks={galleryImagesUrls?.habitaciones?.verano}
                   />
                 </div>
                 <div>
                   <h2 className="text-center text-3xl pb-2">Otoño</h2>
-                  <ImgGroup
+                  <GalleryImgGroup
                     imgGroupLinks={galleryImagesUrls?.habitaciones?.otono}
                   />
                 </div>
                 <div>
                   <h2 className="text-center text-3xl pb-2">Invierno</h2>
-                  <ImgGroup
+                  <GalleryImgGroup
                     imgGroupLinks={galleryImagesUrls?.habitaciones?.invierno}
                   />
                 </div>
                 <div>
                   <h2 className="text-center text-3xl pb-2">Primavera</h2>
-                  <ImgGroup
+                  <GalleryImgGroup
                     imgGroupLinks={galleryImagesUrls?.habitaciones?.primavera}
                   />
                 </div>
@@ -133,7 +134,7 @@ export default function HouseSectionPage({
                     </Link>
                   </Button>
                 </div>
-                <ImgGroup imgGroupLinks={galleryImagesUrls?.cocina} />
+                <GalleryImgGroup imgGroupLinks={galleryImagesUrls?.cocina} />
               </div>
             )}
             {houseSectionId == "banos" && (
@@ -152,7 +153,7 @@ export default function HouseSectionPage({
                     </Link>
                   </Button>
                 </div>
-                <ImgGroup imgGroupLinks={galleryImagesUrls?.banos} />
+                <GalleryImgGroup imgGroupLinks={galleryImagesUrls?.banos} />
               </div>
             )}
             {houseSectionId == "livings" && (
@@ -171,7 +172,7 @@ export default function HouseSectionPage({
                     </Link>
                   </Button>
                 </div>
-                <ImgGroup imgGroupLinks={galleryImagesUrls?.livings} />
+                <GalleryImgGroup imgGroupLinks={galleryImagesUrls?.livings} />
               </div>
             )}
             {houseSectionId == "quincho" && (
@@ -190,7 +191,7 @@ export default function HouseSectionPage({
                     </Link>
                   </Button>
                 </div>
-                <ImgGroup imgGroupLinks={galleryImagesUrls?.quincho} />
+                <GalleryImgGroup imgGroupLinks={galleryImagesUrls?.quincho} />
               </div>
             )}
 
@@ -210,7 +211,7 @@ export default function HouseSectionPage({
                     </Link>
                   </Button>
                 </div>
-                <ImgGroup imgGroupLinks={galleryImagesUrls?.fogoneros} />
+                <GalleryImgGroup imgGroupLinks={galleryImagesUrls?.fogoneros} />
               </div>
             )}
             {houseSectionId == "playita" && (
@@ -234,7 +235,7 @@ export default function HouseSectionPage({
                     </Link>
                   </Button>
                 </div>
-                <ImgGroup imgGroupLinks={galleryImagesUrls?.playita} />
+                <GalleryImgGroup imgGroupLinks={galleryImagesUrls?.playita} />
               </div>
             )}
             {houseSectionId == "invernadero" && (
@@ -253,7 +254,7 @@ export default function HouseSectionPage({
                     </Link>
                   </Button>
                 </div>
-                <ImgGroup imgGroupLinks={galleryImagesUrls?.invernadero} />
+                <GalleryImgGroup imgGroupLinks={galleryImagesUrls?.invernadero} />
               </div>
             )}
             {houseSectionId == "deck" && (
@@ -275,7 +276,7 @@ export default function HouseSectionPage({
                     </Link>
                   </Button>
                 </div>
-                <ImgGroup imgGroupLinks={galleryImagesUrls?.deck} />
+                <GalleryImgGroup imgGroupLinks={galleryImagesUrls?.deck} />
               </div>
             )}
             {houseSectionId == "zona-deportiva" && (
@@ -295,7 +296,7 @@ export default function HouseSectionPage({
                     </Link>
                   </Button>
                 </div>
-                <ImgGroup imgGroupLinks={galleryImagesUrls?.zonaDeportiva} />
+                <GalleryImgGroup imgGroupLinks={galleryImagesUrls?.zonaDeportiva} />
               </div>
             )}
             {houseSectionId == "matera" && (
@@ -320,7 +321,7 @@ export default function HouseSectionPage({
                     </Link>
                   </Button>
                 </div>
-                <ImgGroup imgGroupLinks={galleryImagesUrls?.matera} />
+                <GalleryImgGroup imgGroupLinks={galleryImagesUrls?.matera} />
               </div>
             )}
           </div>

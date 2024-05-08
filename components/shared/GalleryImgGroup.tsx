@@ -1,7 +1,8 @@
 "use client"
 import Image from "next/image"
-import React, { useState, useRef, useEffect, useLayoutEffect } from "react"
+import React, { useEffect, useState } from "react"
 import ImgGalleryModal from "./ImgGalleryModal"
+import Polaroid from "./Polaroid"
 
 const GalleryImgGroup = ({
   imgGroupLinks,
@@ -10,39 +11,40 @@ const GalleryImgGroup = ({
 }) => {
   const [modalIsShown, setModalIsShown] = useState(false)
   const [selectedImg, setSelectedImg] = useState<string>("")
+  const [firstlLinks, setFirstlLinks] = useState<string[] | undefined>([""])
 
   const closeModal = () => {
-    document.body.style.overflow = 'auto';
+    document.body.style.overflow = "auto"
     setModalIsShown(false)
   }
 
-  const openNewModal = (url:string) => {
+  const openNewModal = (url: string) => {
     setSelectedImg(url)
-    document.body.style.overflow = 'hidden';
+    document.body.style.overflow = "hidden"
     setModalIsShown(true)
   }
 
+  //Obetenmos solo las primeras 3 imagenes del array
+  useEffect(() => {
+    setFirstlLinks(imgGroupLinks?.slice(0, 3))
+  }, [imgGroupLinks])
+
   return (
     <>
-
       {/* *******************   GalleryImgGroup Inicial ***************** */}
-      <div className="flex gap-6 flex-wrap justify-around my-6">
-        {imgGroupLinks?.slice(0, 3).map((url) => (
-          <div
-            key={url}
-            className={`p-1 drop-shadow-xl border border-white bg-white rounded-xl mb-6 transition-transform duration-300 ease-in-out transform scale-100 hover:scale-110`}
-            onClick={() => openNewModal(url)}
-          >
-            <Image
-              src={url}
-              width={500}
-              height={500}
-              alt="imagen de galeria"
-              className="h-[300px] w-[300px] object-cover rounded-xl overflow-hidden drop-shadow-xl border"
-            />
+      {firstlLinks && (
+        <div className="flex gap-6 flex-wrap justify-around my-6">
+          <div onClick={() => openNewModal(firstlLinks[0])}>
+            <Polaroid src={firstlLinks[0]} />
           </div>
-        ))}
-      </div>
+          <div onClick={() => openNewModal(firstlLinks[1])}>
+            <Polaroid src={firstlLinks[1]} />
+          </div>
+          <div onClick={() => openNewModal(firstlLinks[2])}>
+            <Polaroid src={firstlLinks[2]} />
+          </div>
+        </div>
+      )}
 
       {modalIsShown && (
         <ImgGalleryModal

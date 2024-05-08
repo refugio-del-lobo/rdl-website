@@ -20,7 +20,7 @@ const LinkCard = ({
     >
       <div className={`w-full flex justify-end p-4`}>
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full">
-          <Image src={imgSrc} width={800} height={800} alt="habitaciones"/>
+          <Image src={imgSrc} width={800} height={800} alt="Imagen"/>
         </div>
         <p className="z-50 font-semibold max-w-[120px] text-end">{text}</p>
         <p className="absolute bottom-2 right-0 z-40 pr-4 font-semibold text-gray-700">

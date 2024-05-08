@@ -1,6 +1,14 @@
 import LinkCard from "@/components/shared/LinkCard"
+import Polaroid from "@/components/shared/Polaroid"
 import Image from "next/image"
 import React from "react"
+
+const title1 = "Refugio del lobo, 1864"
+const text1 = "Lorem ipsum dolor sit, amet consectetur adipisicing elit."
+const title2 = "Refugio del Pescador, 1940"
+const text2 = "Lorem ipsum dolor sit, amet consectetur adipisicing elit. ADemas esto."
+const img1 = "https://raw.githubusercontent.com/refugio-del-lobo/rdl-website/main/public/assets/images/interior/cocina/cocina_01.jpg"
+const img2 = "https://raw.githubusercontent.com/refugio-del-lobo/rdl-website/main/public/assets/images/interior/cocina/cocina_02.jpg"
 
 const Instalaciones = () => {
   return (
@@ -10,6 +18,11 @@ const Instalaciones = () => {
           <h1 className="text-3xl md:text-5xl xl:text-7xl text-center pb-6 md:pb-12 py-5">
             Instalaciones
           </h1>
+          {/* <div className="w-full flex justify-center gap-5 flex-wrap">
+              <Polaroid title={title2} src={img2}/>
+              <Polaroid title={title1} text={text1} src={img1}/>
+              <Polaroid title={title2} text={text2} src={img2}/>
+          </div> */}
           <div className="wrapper min-h-screen opacity-layer-70">
             <div className="mb-8">
               <h3 className="text-[3rem] text-center pb-6 lg:pb-12">La casa</h3>
