@@ -108,6 +108,7 @@ export default function HouseSectionPage({
                     </h2>
                     <GalleryImgGroup
                       imgGroupLinks={galleryImagesUrls?.habitaciones?.otono}
+                      imgGroupLinks2={galleryImagesUrls?.habitaciones?.primavera}
                       single
                     />
                   </div>
