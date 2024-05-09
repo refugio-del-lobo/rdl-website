@@ -1,18 +1,8 @@
 import type { Metadata } from "next";
-import { Bebas_Neue, Poppins } from "next/font/google";
 import "./globals.css";
+import { fontCaveat, fontPoppins } from "@/lib/fonts";
 
-const bebasNeue = Bebas_Neue({
-  subsets: ['latin'],
-  weight: ['400'],
-  variable: '--font-bebasNeue',
-})
 
-const poppins = Poppins({
-  subsets: ['latin'],
-  weight: ['400', '500', '600', '700', '900'],
-  variable: '--font-poppins',
-})
 
 export const metadata: Metadata = {
   title: "Refugio del lobo",
@@ -40,7 +30,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
-      <body className={`${poppins.className}`}>{children}</body>
+      <body className={`${fontPoppins} ${fontCaveat} font-poppins`}>
+          {children}</body>
     </html>
   );
 }

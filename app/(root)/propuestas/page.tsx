@@ -39,22 +39,16 @@ const Propuestas = () => {
                   Verano
                 </TabsTrigger>
                 <TabsTrigger
-                  value="otono"
+                  value="otono_primavera"
                   className="flex-grow text-green-600 md:text-2xl md:w-1/3"
                 >
-                  Otoño
+                  Otoño / Primavera
                 </TabsTrigger>
                 <TabsTrigger
                   value="invierno"
                   className="flex-grow text-green-600 md:text-2xl md:w-1/3"
                 >
                   Invierno
-                </TabsTrigger>
-                <TabsTrigger
-                  value="primavera"
-                  className="flex-grow text-green-600 md:text-2xl md:w-1/3"
-                >
-                  Primavera
                 </TabsTrigger>
               </TabsList>
               <TabsContent value="verano">
@@ -67,14 +61,17 @@ const Propuestas = () => {
                 </p>
               </TabsContent>
               
-              <TabsContent value="otono">
+              <TabsContent value="otono_primavera">
                 <p className="text-2xl md:text-3xl py-2 md:py-4 text-center">
                   {" "}
-                  Otoño
+                  Otoño / Primavera
                 </p>
 
                 <p>
                 Entre soles y nubes, fríos y calores, vivimos los colores del otoño acompañado siempre de una gastronomía ideal para cada momento.
+                </p>
+                <p>
+                Llegan las flores! hermosos y largos días, atardeceres mágicos y noches llenas de estrellas y fuegos.
                 </p>
               </TabsContent>
               
@@ -160,17 +157,6 @@ const Propuestas = () => {
                     </div>
                   </div>
                 </div>
-              </TabsContent>
-
-              <TabsContent value="primavera">
-                <p className="text-2xl md:text-3xl py-2 md:py-4 text-center">
-                  {" "}
-                  Primavera
-                </p>
-
-                <p>
-                Llegan las flores! hermosos y largos días, atardeceres mágicos y noches llenas de estrellas y fuegos.
-                </p>
               </TabsContent>
             </Tabs>
           </div>

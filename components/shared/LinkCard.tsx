@@ -23,8 +23,11 @@ const LinkCard = ({
           <Image src={imgSrc} width={800} height={800} alt="Imagen"/>
         </div>
         <p className="z-50 font-semibold max-w-[120px] text-end">{text}</p>
-        <p className="absolute bottom-2 right-0 z-40 pr-4 font-semibold text-gray-700">
+        {/* <p className="absolute bottom-2 right-0 z-40 pr-4 font-semibold text-gray-700">
           ver mas ➡
+        </p> */}
+        <p className="absolute bottom-2 right-0 z-40 pr-4 font-semibold text-gray-700 font-caveat flex gap-1 items-center">
+          <span className="text-2xl">ver mas</span><span className="self-end pl-[0.15rem]">➡</span>
         </p>
         <div className="absolute right-[-150px] top-[-55px]  md:top-[-55px] w-[300px] h-[300px] opacity-layer-90 rounded-[50%] z-30"></div>
         <div className="absolute right-[-150px] top-[-55px]  md:top-[-55px] w-[300px] h-[300px] opacity-layer-70 rounded-[50%] z-30"></div>

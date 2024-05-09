@@ -304,3 +304,12 @@ footer {
   max-height: 300px;
 }
 
+/* ========================= FONT VARIABLE STYLE ====================== */
+
+.font-caveat {
+  font-family: var(--font-caveat);
+}
+.font-poppins {
+  font-family: var(--font-poppins);
+}
+

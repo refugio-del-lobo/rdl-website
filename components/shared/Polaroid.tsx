@@ -21,8 +21,8 @@ const Polaroid: React.FC<PolaroidProps> = ({ title="", text="", src="https://pic
         <figcaption className="m-1 text-end text-[#2c2c2c]">
           <p className="text-md font-sans font-medium">{title}</p>
           <p className="text-sm text-start font-sans">{text}</p>
-          <p className="absolute bottom-2 right-0 z-40 pr-4 font-semibold text-gray-700">
-          ver todas ➡
+          <p className="absolute bottom-2 right-0 z-40 pr-4 text-gray-700 font-caveat flex gap-1 items-center">
+          <span className="text-2xl">ver todas</span><span className="self-end pl-[0.15rem]">➡</span>
         </p>
         </figcaption>
       </figure>

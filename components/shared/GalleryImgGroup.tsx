@@ -58,7 +58,7 @@ const GalleryImgGroup = ({
         </div>
       )}
       {imgGroupLinks && imgGroupLinks2 && single == true && (
-        <div className="flex gap-6 flex-wrap justify-around my-6">
+        <div className="flex gap-6 flex-wrap justify-around my-2">
           <div onClick={() => openNewModal(concatLinks[0])}>
             <Polaroid src={concatLinks[0]} />
           </div>

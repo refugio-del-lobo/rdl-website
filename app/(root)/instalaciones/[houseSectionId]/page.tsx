@@ -65,12 +65,12 @@ export default function HouseSectionPage({
             {/* ***************** INTERIOR ****************** */}
             {houseSectionId == "habitaciones" && (
               <div className=" flex flex-col">
-                <div className="text-xl flex flex-col gap-2 pb-6 drop-shadow-md">
+                <div className="text-xl flex flex-col gap-2 pb-4 drop-shadow-md">
                   <p>
                     Tenemos en total cuatro habitaciones, cada una tiene el
                     nombre de una estación del año.
                   </p>
-                  <p>
+                  {/* <p>
                     <span className="font-semibold">Verano:</span> Habitación
                     doble con opción de 2 camas simples o 1 cama doble.
                   </p>
@@ -81,13 +81,13 @@ export default function HouseSectionPage({
                   <p>
                     <span className="font-semibold">Invierno:</span> Esta
                     habitación dispone de 5 camas
-                  </p>
+                  </p> */}
                   {/* <p>
                     <span className="font-semibold">Primavera:</span> Tiene
                     cinco camas, cuatro cuchetas y un somier.
                   </p> */}
                 </div>
-                <div className="mt-4 opacity-layer-90 w-fit rounded-md hover:bg-gray-200">
+                <div className="opacity-layer-90 w-fit rounded-md hover:bg-gray-200">
                   <Button variant={"default"}>
                     <Link href={"/instalaciones"}>
                       ⬅ Regresar a instalaciones
@@ -95,25 +95,43 @@ export default function HouseSectionPage({
                   </Button>
                 </div>
                 <div className="flex gap-4 flex-wrap justify-around py-4">
-                  <div>
-                    <h2 className="text-center text-3xl">Verano</h2>
+                  <div className="flex flex-col items-center justify-between mt-2 md:mt-0">
+                    <div className="drop-shadow-md">
+                      <h2 className="text-center text-3xl mb-2">Verano</h2>
+                      <p className="max-w-[300px] font-medium text-lg">
+                        Habitación doble con opción de 2 camas simples o 1 cama
+                        doble.
+                      </p>
+                    </div>
                     <GalleryImgGroup
                       imgGroupLinks={galleryImagesUrls?.habitaciones?.verano}
                       single={true}
                     />
                   </div>
-                  <div>
-                    <h2 className="text-center text-3xl">
-                      Otoño / Primavera
-                    </h2>
+                  <div className="flex flex-col items-center justify-between mt-2 md:mt-0">
+                    <div className="drop-shadow-md">
+                      <h2 className="text-center text-3xl mb-2">
+                        Otoño / Primavera
+                      </h2>
+                      <p className="max-w-[300px] font-medium text-lg">
+                        Ambas habitacione spueden adaptarse de 2 a 5 camas simples.
+                      </p>
+                    </div>
                     <GalleryImgGroup
                       imgGroupLinks={galleryImagesUrls?.habitaciones?.otono}
-                      imgGroupLinks2={galleryImagesUrls?.habitaciones?.primavera}
+                      imgGroupLinks2={
+                        galleryImagesUrls?.habitaciones?.primavera
+                      }
                       single={true}
                     />
                   </div>
-                  <div>
-                    <h2 className="text-center text-3xl">Invierno</h2>
+                  <div className="flex flex-col items-center justify-between mt-2 md:mt-0">
+                    <div className="drop-shadow-md">
+                      <h2 className="text-center text-3xl mb-2">Invierno</h2>
+                      <p className="max-w-[300px] font-medium text-lg">
+                        Esta habitación dispone de 5 camas simples
+                      </p>
+                    </div>
                     <GalleryImgGroup
                       imgGroupLinks={galleryImagesUrls?.habitaciones?.invierno}
                       single={true}
