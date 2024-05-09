@@ -25,10 +25,9 @@ const Header = () => {
       setCurrentLink("/")
     }
 
-    
-    useLayoutEffect(() => {
-      let lastScrollTop = window.scrollY || document.documentElement.scrollTop
-      const handleScroll = () => {
+  useLayoutEffect(() => {
+    let lastScrollTop = window.scrollY || document.documentElement.scrollTop
+    const handleScroll = () => {
       let scrollTop = window.scrollY || document.documentElement.scrollTop
       if (headerRef.current) {
         if (scrollTop > lastScrollTop) {
@@ -46,14 +45,12 @@ const Header = () => {
     }
   }, [headerRef])
 
-
-
   return (
     <header
-      className={`w-full xl:text-xl header-img shadow-lg ${showHeader} z-50`}
+      className={`w-full xl:text-xl shadow-lg ${showHeader} z-50`}
       ref={headerRef}
     >
-      <div className="headerWrapper flex items-center justify-between">
+      <div className="headerWrapper bg-[#000000d8] flex items-center justify-between">
         <Link href="/" className="w-36" onClick={handleLinkClick("/")}>
           <Image
             src="https://raw.githubusercontent.com/refugio-del-lobo/rdl-website/main/public/assets/images/rdl-logo-white.svg"
@@ -64,10 +61,12 @@ const Header = () => {
           />
         </Link>
 
-        <MobileNav setCurrentLink={setCurrentLink} currentLink={currentLink} />
-        <nav className="md:flex md:justify-between md:items-center hidden md:visible w-full text-white">
+        <nav
+          className={`md:flex md:justify-between md:items-center hidden md:visible w-full text-white z-50`}
+        >
           <NavItems setCurrentLink={setCurrentLink} currentLink={currentLink} />
         </nav>
+        <MobileNav setCurrentLink={setCurrentLink} currentLink={currentLink} />
       </div>
     </header>
   )

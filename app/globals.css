@@ -76,13 +76,21 @@ p {
 
 header.header-img {
   background-color: black;
+  opacity: 1;
+}
+
+.opacity-70 {
   opacity: .7;
+}
+.opacity-100 {
+  opacity: 1;
 }
 
 .header-img-mobile {
   background-image: url('https://raw.githubusercontent.com/refugio-del-lobo/rdl-website/main/public/assets/images/casa_de_lejos.jpg');
   background-size: cover;
   background-position: center;
+  opacity: 1;
 }
 
 header {

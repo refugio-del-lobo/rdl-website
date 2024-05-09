@@ -3,7 +3,7 @@ import Link from "next/link"
 import { usePathname, useRouter } from "next/navigation"
 import React, { useEffect, useState } from "react"
 
-const NavItems = ({setCurrentLink, currentLink, clicks }: any) => {
+const NavItems = ({setCurrentLink, currentLink, clicks, toggleNavbar }: any) => {
   // console.log("clicks", clicks)
   // console.log("currentLink 8", currentLink)
 
@@ -21,10 +21,13 @@ const NavItems = ({setCurrentLink, currentLink, clicks }: any) => {
       setSelectedLink(href)
       setCurrentLink(href)
       router.push(href)
+      if(toggleNavbar){
+        toggleNavbar()
+      }
     }
 
   return (
-    <ul className="flex flex-col items-center md:flex-row w-full justify-end gap-10">
+    <ul className="flex flex-col items-center md:flex-row w-full md:justify-end gap-10">
       <Link
         href="/"
         onClick={handleLinkClick("/")}
