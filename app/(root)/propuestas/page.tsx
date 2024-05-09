@@ -2,6 +2,7 @@
 import React, { useEffect, useRef } from "react"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import Image from "next/image"
+import { Button } from "@/components/ui/button"
 
 const Propuestas = () => {
   const videoRef = useRef<HTMLVideoElement>(null)
@@ -30,7 +31,10 @@ const Propuestas = () => {
             </div>
           </div>
           <div className="rounded-md p-2">
-            <Tabs defaultValue="verano" className="opacity-layer-90 rounded-md p-1">
+            <Tabs
+              defaultValue="verano"
+              className="opacity-layer-90 rounded-md p-1"
+            >
               <TabsList className="bg-transparent flex justify-around">
                 <TabsTrigger
                   value="verano"
@@ -51,43 +55,139 @@ const Propuestas = () => {
                   Invierno
                 </TabsTrigger>
               </TabsList>
-              <TabsContent value="verano">
-                <p className="text-2xl md:text-3xl py-2 md:py-4 text-center">
-                  Verano
-                </p>
-                <p>
-                Vamos en búsqueda de los lagos, ríos, miradores, cascadas, trekkings y te invitamos a vivir unos días de conexión con la naturaleza y los paisajes que nos rodean.
 
-                </p>
+              <TabsContent value="verano">
+                <div className="flex flex-col px-4 pb-4">
+                  <p className="text-2xl md:text-3xl py-2 md:py-4 text-center">
+                    Verano
+                  </p>
+                  <p>
+                    Vamos en búsqueda de los lagos, ríos, miradores, cascadas,
+                    trekkings y te invitamos a vivir unos días de conexión con
+                    la naturaleza y los paisajes que nos rodean.
+                  </p>
+                </div>
+                <div className="flex justify-center p-2">
+                  <Image
+                    src="https://picsum.photos/600"
+                    width={600}
+                    height={600}
+                    alt="Img"
+                  />
+                </div>
+                <div className="w-full flex object-contain object-fit-contain ratio-16x9 p-2">
+                  <video
+                    src="/assets/videos/institucional.mp4"
+                    controls
+                  ></video>
+                </div>
+                <div className="w-full p-2 flex justify-center my-4 drop-shadow-md">
+                  <div className="bg-[#acecb0ae] text-green-600 w-fit rounded-md hover:bg-[#71e979b5] border-green-600 border drop-shadow-md">
+                    <Button
+                      variant={"default"}
+                      className="p-6 text-lg font-medium flex gap-2 items-center"
+                    >
+                      <p>
+
+                      DESCARGAR .PDF
+                      </p>
+                      <span>
+                        <Image
+                          src={"/assets/icons/icon-pdf.svg"}
+                          width={28}
+                          height={28}
+                          alt="Image"
+                          className=""
+                        />
+                      </span>
+                    </Button>
+                  </div>
+                </div>
               </TabsContent>
-              
+
               <TabsContent value="otono_primavera">
+              <div className="flex flex-col px-4 pb-4">
                 <p className="text-2xl md:text-3xl py-2 md:py-4 text-center">
                   {" "}
                   Otoño / Primavera
                 </p>
 
                 <p>
-                Entre soles y nubes, fríos y calores, vivimos los colores del otoño acompañado siempre de una gastronomía ideal para cada momento.
+                  Entre soles y nubes, fríos y calores, vivimos los colores del
+                  otoño acompañado siempre de una gastronomía ideal
+                  para cada momento.
                 </p>
                 <p>
-                Llegan las flores! hermosos y largos días, atardeceres mágicos y noches llenas de estrellas y fuegos.
+                  Llegan las flores! hermosos y largos días, atardeceres mágicos
+                  y noches llenas de estrellas y fuegos.
                 </p>
+
+              </div>
+              <div className="flex justify-center p-2">
+                  <Image
+                    src="https://picsum.photos/600"
+                    width={600}
+                    height={600}
+                    alt="Img"
+                  />
+                </div>
+                <div className="w-full flex object-contain object-fit-contain ratio-16x9 p-2">
+                  <video
+                    src="/assets/videos/institucional.mp4"
+                    controls
+                  ></video>
+                </div>
+                <div className="w-full p-2 flex justify-center my-4 drop-shadow-md">
+                  <div className="bg-[#acecb0ae] text-green-600 w-fit rounded-md hover:bg-[#71e979b5] border-green-600 border drop-shadow-md">
+                    <Button
+                      variant={"default"}
+                      className="p-6 text-lg font-medium flex gap-2 items-center"
+                    >
+                      <p>
+
+                      DESCARGAR .PDF
+                      </p>
+                      <span>
+                        <Image
+                          src={"/assets/icons/icon-pdf.svg"}
+                          width={28}
+                          height={28}
+                          alt="Image"
+                          className=""
+                        />
+                      </span>
+                    </Button>
+                  </div>
+                </div>
               </TabsContent>
-              
-              <TabsContent value="invierno"
-                className=" bg-contain bg-repeat-y lg:bg-cover p-2 rounded-md"
+
+              <TabsContent
+                value="invierno"
+                className=" bg-contain bg-repeat-y lg:bg-cover rounded-md"
               >
+                
+
                 <div>
-                  {/* <h2 className="text-2xl lg:text-4xl text-center font-semibold p-4">
-                    Winter Experience
-                  </h2> */}
-                  <div className="flex flex-col items-center gap-4">
-                    <div className="flex flex-col items-center gap-4 lg:flex-row-reverse">
-                      {" "}
-                      <div className="h-4/6 flex justify-center items-center p-4 lg:w-2/6">
-                        <div className="video-frame">
-                          <video
+                <div className="flex flex-col px-4 pb-4">
+                  <p className="text-2xl md:text-3xl py-2 md:py-4 text-center">
+                    Invierno
+                  </p>
+                  <p>
+                  Nos vestimos de blanco y te ofrecemos una semana de
+                          esquí sin preocupaciones.
+                  </p>
+                  </div>
+
+                <div className="flex justify-center p-2">
+                  <Image
+                    src="https://picsum.photos/600"
+                    width={600}
+                    height={600}
+                    alt="Img"
+                  />
+                </div>
+                <div className="w-full flex object-contain object-fit-contain ratio-16x9 p-2 justify-center">
+                <video
                             src="assets/videos/rdl_reel_camino_a_chapelco.mp4"
                             autoPlay
                             muted
@@ -100,62 +200,29 @@ const Propuestas = () => {
                             ref={videoRef}
                             onLoadedMetadata={handleLoadedMetadata}
                           ></video>
-                        </div>
-                      </div>
-                      <div className=" flex flex-col gap-4 text-xl text-justify lg:text-2xl lg:w-4/6 lg:px-20">
-                        <p>
-                        Nos vestimos de blanco y te ofrecemos una semana de esquí sin preocupaciones.
-                        </p>
-                      </div>
-                    </div>
+                </div>
+                <div className="w-full p-2 flex justify-center my-4 drop-shadow-md">
+                  <div className="bg-[#acecb0ae] text-green-600 w-fit rounded-md hover:bg-[#71e979b5] border-green-600 border drop-shadow-md">
+                    <Button
+                      variant={"default"}
+                      className="p-6 text-lg font-medium flex gap-2 items-center"
+                    >
+                      <p>
 
-                    <div className="flex justify-center max-w-[500px] max-h-[500px] drop-shadow-2xl">
-                      <div className="rounded-sm img-container">
+                      DESCARGAR .PDF
+                      </p>
+                      <span>
                         <Image
-                          src={
-                            "https://raw.githubusercontent.com/refugio-del-lobo/rdl-website/main/public/assets/images/fogon_grupo_4.jpg"
-                          }
-                          width={500}
-                          height={500}
-                          alt="2 personas en el fogon"
-                          className="rounded-lg responsive-img"
+                          src={"/assets/icons/icon-pdf.svg"}
+                          width={28}
+                          height={28}
+                          alt="Image"
+                          className=""
                         />
-                      </div>
-                    </div>
-                    <div className="flex justify-center max-w-[500px] max-h-[500px] drop-shadow-2xl">
-                      <div className="rounded-sm img-container">
-                        <Image
-                          src={
-                            "https://raw.githubusercontent.com/refugio-del-lobo/rdl-website/main/public/assets/images/fogon_grupo_4.jpg"
-                          }
-                          width={500}
-                          height={500}
-                          alt="2 personas en el fogon"
-                          className="rounded-lg responsive-img"
-                        />
-                      </div>
-                    </div>
-                    <p className="text-xl text-justify">
-                      Sumérgete en la atmósfera acogedora de nuestro hotel
-                      después de un día de esquí. Disfruta de una deliciosa cena
-                      junto a la chimenea y comparte tus aventuras en la montaña
-                      con otros entusiastas. ¡Tu experiencia de esquí en San
-                      Martín de los Andes comienza aquí!
-                    </p>
-                    <div className="flex justify-center max-w-[500px] max-h-[500px] drop-shadow-2xl">
-                      <div className="rounded-sm img-container">
-                        <Image
-                          src={
-                            "https://raw.githubusercontent.com/refugio-del-lobo/rdl-website/main/public/assets/images/fogon_grupo_4.jpg"
-                          }
-                          width={500}
-                          height={500}
-                          alt="2 personas en el fogon"
-                          className="rounded-lg responsive-img"
-                        />
-                      </div>
-                    </div>
+                      </span>
+                    </Button>
                   </div>
+                </div>
                 </div>
               </TabsContent>
             </Tabs>
