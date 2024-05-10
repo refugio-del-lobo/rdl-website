@@ -47,10 +47,10 @@ const Header = () => {
 
   return (
     <header
-      className={`w-full xl:text-xl shadow-lg ${showHeader} z-50`}
+      className={`w-full xl:text-xl shadow-lg ${showHeader} bg-[#000000d8] z-50`}
       ref={headerRef}
     >
-      <div className="headerWrapper bg-[#000000d8] flex items-center justify-between">
+      <div className="headerWrapper flex items-center justify-between">
         <Link href="/" className="w-36" onClick={handleLinkClick("/")}>
           <Image
             src="https://raw.githubusercontent.com/refugio-del-lobo/rdl-website/main/public/assets/images/rdl-logo-white.svg"
