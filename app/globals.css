@@ -145,9 +145,10 @@ header {
 .video {
   border-radius: 15px;
 }
+
 @media only screen and (min-width: 768px) { 
   .video {
-    max-height: 600px;
+    max-height: 70svh;
   }
   
 }

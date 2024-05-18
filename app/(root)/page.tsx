@@ -380,7 +380,7 @@ export default function Home() {
                     alt="logo de Refugio del Lobo"
                     className="thumb-img"
                   />
-                  <Link href={"/instalaciones"}>
+                  <Link href={"/propuestas"}>
                     <div className="thumb-img bg-[#ffffffc2] scale-75 flex justify-center items-center text-gray-500">
                       Ver mas...
                     </div>

@@ -110,7 +110,7 @@ const Contacto = () => {
   return (
     <div className="bg-contacto-bg bg-cover bg-center">
       <div className="w-full min-h-screen opacity-layer-70 hf-paddings">
-        <div className="wrapper min-h-screen">
+        <div className="wrapper min-h-[90svh] flex items-center justify-center">
           <div className="flex justify-center">
             <div className="opacity-layer-90">
               <Card className="opacity-layer-90 max-w-lg">
