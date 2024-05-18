@@ -54,7 +54,7 @@ const Propuestas = () => {
           </div>
           <div className="rounded-md p-2">
             <Tabs
-              defaultValue="verano"
+              defaultValue="invierno"
               className="opacity-layer-90 rounded-md p-1"
             >
               <TabsList className="bg-transparent flex justify-around">
