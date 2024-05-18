@@ -125,7 +125,7 @@ const Propuestas = () => {
                           variant={"default"}
                           className="p-8 md:p-6 text-lg font-medium flex gap-2 items-center"
                         >
-                          <p>Ver "M4DPASTA Experience"</p>
+                          <p>Ver {"'"}M4DPASTA Experience{"'"}</p>
                           <span>
                             <Image
                               src={"/assets/icons/icon-pdf.svg"}
@@ -194,7 +194,7 @@ const Propuestas = () => {
                           variant={"default"}
                           className="p-8 md:p-6 text-lg font-medium flex gap-2 items-center"
                         >
-                          <p>Ver "Yoga, Golf & meditación"</p>
+                          <p>Ver {"'"}Yoga, Golf & meditación{"'"}</p>
                           <span>
                             <Image
                               src={"/assets/icons/icon-pdf.svg"}
@@ -219,7 +219,7 @@ const Propuestas = () => {
                           variant={"default"}
                           className="p-8 md:p-6 text-lg font-medium flex gap-2 items-center"
                         >
-                          <p>Ver "RenaSer - Retiro espiritual"</p>
+                          <p>Ver {"'"}RenaSer - Retiro espiritual{"'"}</p>
                           <span>
                             <Image
                               src={"/assets/icons/icon-pdf.svg"}
@@ -244,7 +244,7 @@ const Propuestas = () => {
                           variant={"default"}
                           className="p-8 md:p-6 text-lg font-medium flex gap-2 items-center"
                         >
-                          <p>Ver "Golf & Wine Experience - Lagarde"</p>
+                          <p>Ver {"'"}Golf & Wine Experience - Lagarde{"'"}</p>
                           <span>
                             <Image
                               src={"/assets/icons/icon-pdf.svg"}
@@ -269,7 +269,7 @@ const Propuestas = () => {
                           variant={"default"}
                           className="p-8 md:p-6 text-lg font-medium flex gap-2 items-center"
                         >
-                          <p>Ver "Golf & Wine Experience - Putruele"</p>
+                          <p>Ver {"'"}Golf & Wine Experience - Putruele{"'"}</p>
                           <span>
                             <Image
                               src={"/assets/icons/icon-pdf.svg"}
@@ -336,7 +336,7 @@ const Propuestas = () => {
                           variant={"default"}
                           className="p-8 md:p-6 text-lg font-medium flex gap-2 items-center"
                         >
-                          <p>Ver "Ski Week"</p>
+                          <p>Ver {"'"}Ski Week{"'"}</p>
                           <span>
                             <Image
                               src={"/assets/icons/icon-pdf.svg"}
@@ -361,7 +361,7 @@ const Propuestas = () => {
                           variant={"default"}
                           className="p-8 md:p-6 text-lg font-medium flex gap-2 items-center"
                         >
-                          <p>Ver "After Ski Experience"</p>
+                          <p>Ver {"'"}After Ski Experience{"'"}</p>
                           <span>
                             <Image
                               src={"/assets/icons/icon-pdf.svg"}
@@ -386,7 +386,7 @@ const Propuestas = () => {
                           variant={"default"}
                           className="p-8 md:p-6 text-lg font-medium flex gap-2 items-center"
                         >
-                          <p>Ver "Patagonia & Content Experience"</p>
+                          <p>Ver {"'"}Patagonia & Content Experience{"'"}</p>
                           <span>
                             <Image
                               src={"/assets/icons/icon-pdf.svg"}
