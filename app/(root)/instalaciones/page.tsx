@@ -15,9 +15,9 @@ const Instalaciones = () => {
     <>
       <div className=" bg-nosotros-bg bg-cover bg-center">
         <div className="w-full h-full min-h-screen opacity-layer-70 hf-paddings ">
-          <h1 className="text-3xl md:text-5xl xl:text-7xl text-center pb-6 md:pb-12 py-5">
+          {/* <h1 className="text-3xl md:text-5xl xl:text-7xl text-center pb-6 md:pb-12 py-5">
             Instalaciones
-          </h1>
+          </h1> */}
           {/* <div className="w-full flex justify-center gap-5 flex-wrap">
               <Polaroid title={title2} src={img2}/>
               <Polaroid title={title1} text={text1} src={img1}/>
