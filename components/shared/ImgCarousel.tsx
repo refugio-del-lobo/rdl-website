@@ -27,9 +27,9 @@ const ImgCarousel = ({ imgPathArray }: CarouselProps) => {
     )
 
   return (
-    <div className="relative h-full w-full flex justify-center overflow-hidden max-w-[500px]">
+    <div className="relative h-full w-full flex justify-center overflow-hidden max-w-[400px]">
       <div
-        className="flex flex-nowrap transition-transform ease-out duration-500 h-full max-w-[500px]"
+        className="flex flex-nowrap transition-transform ease-out duration-500 h-full max-w-[400px]"
         style={{ transform: `translateX(-${current * 100}%)` }}
       >
         {imgPathArray.map((path) => (
