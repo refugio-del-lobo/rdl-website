@@ -18,9 +18,9 @@ const ButtonViewPdf = ({title, src}: ButtonProps) => {
     >
       <Button
         variant={"default"}
-        className="p-8 md:p-6 md:text-lg font-medium flex gap-2 items-center text-wrap"
+        className="p-8 md:p-6 md:text-lg font-medium flex gap-2 items-center"
       >
-        <p>Ver {"'"}{title}{"'"}</p>
+        <p className='text-wrap text-center'>Ver {"'"}{title}{"'"}</p>
         <span>
           <Image
             src={"/assets/icons/icon-pdf.svg"}
