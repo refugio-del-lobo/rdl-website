@@ -1,10 +1,8 @@
 "use client"
 import React, { useEffect, useRef } from "react"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import Image from "next/image"
-import { Button } from "@/components/ui/button"
-import Link from "next/link"
 import ImgCarousel from "@/components/shared/ImgCarousel"
+import ButtonViewPdf from "@/components/shared/ButtonViewPdf"
 
 const veranoFlyers: string[] = [
   "/assets/images/flyers-rdl/gira-nbg_imagen&info.jpg",
@@ -84,12 +82,11 @@ const Propuestas = () => {
                     Verano
                   </p>
                   <div className="wrapper">
-
-                  <p className="text-center text-pretty font-medium text-lg md:text-xl">
-                    Vamos en búsqueda de los lagos, ríos, miradores, cascadas,
-                    trekkings y te invitamos a vivir unos días de conexión con
-                    la naturaleza y los paisajes que nos rodean.
-                  </p>
+                    <p className="text-center text-pretty font-medium text-lg md:text-xl">
+                      Vamos en búsqueda de los lagos, ríos, miradores, cascadas,
+                      trekkings y te invitamos a vivir unos días de conexión con
+                      la naturaleza y los paisajes que nos rodean.
+                    </p>
                   </div>
                 </div>
                 {/* <div className="flex justify-center p-2">
@@ -102,9 +99,8 @@ const Propuestas = () => {
                 </div> */}
 
                 <div className="wrapper flex justify-center">
-                    <ImgCarousel imgPathArray={veranoFlyers} />
-                  </div>
-
+                  <ImgCarousel imgPathArray={veranoFlyers} />
+                </div>
 
                 {/* <div className="w-full flex object-contain object-fit-contain ratio-16x9 p-2">
                   <video
@@ -113,31 +109,11 @@ const Propuestas = () => {
                   ></video>
                 </div> */}
                 <div className="wrapper w-full p-2 flex flex-col items-center justify-center gap-4 drop-shadow-md">
-                    <div className="bg-[#acecb0ae] text-green-600 w-fit rounded-md hover:bg-[#71e979b5] border-green-600 border drop-shadow-md">
-                      <Link
-                        href={
-                          "/assets/images/pdfs-rdl/M4dpasta_Refugio-del-lobo.pdf"
-                        }
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <Button
-                          variant={"default"}
-                          className="p-8 md:p-6 text-lg font-medium flex gap-2 items-center"
-                        >
-                          <p>Ver {"'"}M4DPASTA Experience{"'"}</p>
-                          <span>
-                            <Image
-                              src={"/assets/icons/icon-pdf.svg"}
-                              width={28}
-                              height={28}
-                              alt="Image"
-                              className="min-w-8 md:min-w-6"
-                            />
-                          </span>
-                        </Button>
-                      </Link>
-                    </div>
+                  
+                <ButtonViewPdf
+                    title="M4DPASTA Experience"
+                    src="/assets/images/pdfs-rdl/M4dpasta_Refugio-del-lobo.pdf"
+                  />
                 </div>
               </TabsContent>
 
@@ -148,18 +124,17 @@ const Propuestas = () => {
                     Otoño / Primavera
                   </p>
 
-                        <div className="wrapper">
-
-                  <p className="text-center text-pretty font-medium text-lg md:text-xl">
-                    Entre soles y nubes, fríos y calores, vivimos los colores
-                    del otoño acompañado siempre de una gastronomía ideal
-                    para cada momento.
-                  </p>
-                  <p className="text-center text-pretty font-medium text-lg md:text-xl">
-                    Llegan las flores! hermosos y largos días, atardeceres
-                    mágicos y noches llenas de estrellas y fuegos.
-                  </p>
-                        </div>
+                  <div className="wrapper">
+                    <p className="text-center text-pretty font-medium text-lg md:text-xl">
+                      Entre soles y nubes, fríos y calores, vivimos los colores
+                      del otoño acompañado siempre de una gastronomía ideal
+                      para cada momento.
+                    </p>
+                    <p className="text-center text-pretty font-medium text-lg md:text-xl">
+                      Llegan las flores! hermosos y largos días, atardeceres
+                      mágicos y noches llenas de estrellas y fuegos.
+                    </p>
+                  </div>
                 </div>
                 {/* <div className="flex justify-center p-2">
                   <Image
@@ -171,8 +146,8 @@ const Propuestas = () => {
                 </div> */}
 
                 <div className="wrapper flex justify-center">
-                    <ImgCarousel imgPathArray={otonoPrimaveraFlyers} />
-                  </div>
+                  <ImgCarousel imgPathArray={otonoPrimaveraFlyers} />
+                </div>
 
                 {/* <div className="w-full flex object-contain object-fit-contain ratio-16x9 p-2">
                   <video
@@ -182,107 +157,23 @@ const Propuestas = () => {
                   ></video>
                 </div> */}
                 <div className="wrapper w-full p-2 flex flex-col items-center justify-center gap-4 drop-shadow-md">
-                    <div className="bg-[#acecb0ae] text-green-600 w-fit rounded-md hover:bg-[#71e979b5] border-green-600 border drop-shadow-md">
-                      <Link
-                        href={
-                          "/assets/images/pdfs-rdl/yoga-golf-meditacion_Refugio-del-lobo.pdf"
-                        }
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <Button
-                          variant={"default"}
-                          className="p-8 md:p-6 text-lg font-medium flex gap-2 items-center"
-                        >
-                          <p>Ver {"'"}Yoga, Golf & meditación{"'"}</p>
-                          <span>
-                            <Image
-                              src={"/assets/icons/icon-pdf.svg"}
-                              width={28}
-                              height={28}
-                              alt="Image"
-                              className="min-w-8 md:min-w-6"
-                            />
-                          </span>
-                        </Button>
-                      </Link>
-                    </div>
-                    <div className="bg-[#acecb0ae] text-green-600 w-fit rounded-md hover:bg-[#71e979b5] border-green-600 border drop-shadow-md">
-                      <Link
-                        href={
-                          "/assets/images/pdfs-rdl/RenaSer-retiro-espiritual_Refugio-del-lobo.pdf"
-                        }
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <Button
-                          variant={"default"}
-                          className="p-8 md:p-6 text-lg font-medium flex gap-2 items-center"
-                        >
-                          <p>Ver {"'"}RenaSer - Retiro espiritual{"'"}</p>
-                          <span>
-                            <Image
-                              src={"/assets/icons/icon-pdf.svg"}
-                              width={28}
-                              height={28}
-                              alt="Image"
-                              className="min-w-8 md:min-w-6"
-                            />
-                          </span>
-                        </Button>
-                      </Link>
-                    </div>
-                    <div className="bg-[#acecb0ae] text-green-600 w-fit rounded-md hover:bg-[#71e979b5] border-green-600 border drop-shadow-md">
-                      <Link
-                        href={
-                          "/assets/images/pdfs-rdl/Golf&Wine-experience-Lagarde_Refugio-del-lobo.pdf"
-                        }
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <Button
-                          variant={"default"}
-                          className="p-8 md:p-6 text-lg font-medium flex gap-2 items-center"
-                        >
-                          <p>Ver {"'"}Golf & Wine Experience - Lagarde{"'"}</p>
-                          <span>
-                            <Image
-                              src={"/assets/icons/icon-pdf.svg"}
-                              width={28}
-                              height={28}
-                              alt="Image"
-                              className="min-w-8 md:min-w-6"
-                            />
-                          </span>
-                        </Button>
-                      </Link>
-                    </div>
-                    <div className="bg-[#acecb0ae] text-green-600 w-fit rounded-md hover:bg-[#71e979b5] border-green-600 border drop-shadow-md">
-                      <Link
-                        href={
-                          "/assets/images/pdfs-rdl/Golf&Wine-experience-Putruele_Refugio-del-lobo.pdf"
-                        }
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <Button
-                          variant={"default"}
-                          className="p-8 md:p-6 text-lg font-medium flex gap-2 items-center"
-                        >
-                          <p>Ver {"'"}Golf & Wine Experience - Putruele{"'"}</p>
-                          <span>
-                            <Image
-                              src={"/assets/icons/icon-pdf.svg"}
-                              width={28}
-                              height={28}
-                              alt="Image"
-                              className="min-w-8 md:min-w-6"
-                            />
-                          </span>
-                        </Button>
-                      </Link>
-                    </div>
-                  </div>
+                  <ButtonViewPdf
+                    title="Yoga, Golf & meditación"
+                    src="/assets/images/pdfs-rdl/yoga-golf-meditacion_Refugio-del-lobo.pdf"
+                  />
+                  <ButtonViewPdf
+                    title="RenaSer - Retiro espiritual"
+                    src="/assets/images/pdfs-rdl/RenaSer-retiro-espiritual_Refugio-del-lobo.pdf"
+                  />
+                  <ButtonViewPdf
+                    title="Golf & Wine Experience - Lagarde"
+                    src="/assets/images/pdfs-rdl/Golf&Wine-experience-Lagarde_Refugio-del-lobo.pdf"
+                  />
+                  <ButtonViewPdf
+                    title="Golf & Wine Experience - Putruele"
+                    src="/assets/images/pdfs-rdl/Golf&Wine-experience-Putruele_Refugio-del-lobo.pdf"
+                  />
+                </div>
               </TabsContent>
 
               <TabsContent
@@ -295,11 +186,10 @@ const Propuestas = () => {
                       Invierno
                     </p>
                     <div className="wrapper">
-
-                    <p className="text-center text-pretty font-medium text-lg md:text-xl">
-                      Nos vestimos de blanco y te ofrecemos una semana de esquí
-                      sin preocupaciones.
-                    </p>
+                      <p className="text-center text-pretty font-medium text-lg md:text-xl">
+                        Nos vestimos de blanco y te ofrecemos una semana de
+                        esquí sin preocupaciones.
+                      </p>
                     </div>
                   </div>
 
@@ -324,81 +214,18 @@ const Propuestas = () => {
                   </div> */}
 
                   <div className="wrapper w-full p-2 flex flex-col items-center justify-center gap-4 drop-shadow-md">
-                    <div className="bg-[#acecb0ae] text-green-600 w-fit rounded-md hover:bg-[#71e979b5] border-green-600 border drop-shadow-md">
-                      <Link
-                        href={
-                          "/assets/images/pdfs-rdl/ski-week_Refugio-del-lobo.pdf"
-                        }
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <Button
-                          variant={"default"}
-                          className="p-8 md:p-6 text-lg font-medium flex gap-2 items-center"
-                        >
-                          <p>Ver {"'"}Ski Week{"'"}</p>
-                          <span>
-                            <Image
-                              src={"/assets/icons/icon-pdf.svg"}
-                              width={28}
-                              height={28}
-                              alt="Image"
-                              className="min-w-8 md:min-w-6"
-                            />
-                          </span>
-                        </Button>
-                      </Link>
-                    </div>
-                    <div className="bg-[#acecb0ae] text-green-600 w-fit rounded-md hover:bg-[#71e979b5] border-green-600 border drop-shadow-md">
-                      <Link
-                        href={
-                          "/assets/images/pdfs-rdl/After-Ski_Refugio-del-lobo.pdf"
-                        }
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <Button
-                          variant={"default"}
-                          className="p-8 md:p-6 text-lg font-medium flex gap-2 items-center"
-                        >
-                          <p>Ver {"'"}After Ski Experience{"'"}</p>
-                          <span>
-                            <Image
-                              src={"/assets/icons/icon-pdf.svg"}
-                              width={28}
-                              height={28}
-                              alt="Image"
-                              className="min-w-8 md:min-w-6"
-                            />
-                          </span>
-                        </Button>
-                      </Link>
-                    </div>
-                    <div className="bg-[#acecb0ae] text-green-600 w-fit rounded-md hover:bg-[#71e979b5] border-green-600 border drop-shadow-md">
-                      <Link
-                        href={
-                          "/assets/images/pdfs-rdl/Patagonia&content-experience_Refugio-del-lobo.pdf"
-                        }
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <Button
-                          variant={"default"}
-                          className="p-8 md:p-6 text-lg font-medium flex gap-2 items-center"
-                        >
-                          <p>Ver {"'"}Patagonia & Content Experience{"'"}</p>
-                          <span>
-                            <Image
-                              src={"/assets/icons/icon-pdf.svg"}
-                              width={28}
-                              height={28}
-                              alt="Image"
-                              className="min-w-8 md:min-w-6"
-                            />
-                          </span>
-                        </Button>
-                      </Link>
-                    </div>
+                    <ButtonViewPdf
+                      title="Ski Week"
+                      src="/assets/images/pdfs-rdl/ski-week_Refugio-del-lobo.pdf"
+                    />
+                    <ButtonViewPdf
+                      title="After Ski Experience"
+                      src="/assets/images/pdfs-rdl/After-Ski_Refugio-del-lobo.pdf"
+                    />
+                    <ButtonViewPdf
+                      title="Patagonia & Content Experience"
+                      src="/assets/images/pdfs-rdl/Patagonia&content-experience_Refugio-del-lobo.pdf"
+                    />
                   </div>
                 </div>
               </TabsContent>
