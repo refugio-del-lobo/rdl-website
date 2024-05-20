@@ -27,7 +27,7 @@ const ImgCarousel = ({ imgPathArray }: CarouselProps) => {
     )
 
   return (
-    <div className="relative h-[75svh] w-full flex justify-center overflow-hidden max-w-[500px]">
+    <div className="relative h-full  w-full flex justify-center overflow-hidden max-w-[500px]">
       <div
         className="flex flex-nowrap transition-transform ease-out duration-500 h-full max-w-[500px]"
         style={{ transform: `translateX(-${current * 100}%)` }}
@@ -38,7 +38,7 @@ const ImgCarousel = ({ imgPathArray }: CarouselProps) => {
             width={640}
             height={1138}
             alt="Img"
-            className="min-w-full object-contain"
+            className="min-w-full"
             key={path}
           />
         ))}
