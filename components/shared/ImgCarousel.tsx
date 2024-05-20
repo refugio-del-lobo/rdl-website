@@ -13,7 +13,7 @@ const ImgCarousel = ({ imgPathArray }: CarouselProps) => {
       setcurrent((current) =>
         current === imgPathArray.length - 1 ? 0 : current + 1
       )
-    }, 10000)
+    }, 15000)
     return () => clearInterval(interval)
   }, [imgPathArray.length])
 
