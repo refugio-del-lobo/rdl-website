@@ -10,7 +10,7 @@ type ButtonProps = {
 
 const ButtonViewPdf = ({title, src}: ButtonProps) => {
   return (
-    <div className="bg-[#acecb0ae] text-green-600 w-full max-w-max md:w-1/3 rounded-md hover:bg-[#71e979b5] border-green-600 border drop-shadow-md">
+    <div className="bg-[#acecb0ae] text-green-600 w-full max-w-max rounded-md hover:bg-[#71e979b5] border-green-600 border drop-shadow-md">
     <Link
       href={src}
       target="_blank"
