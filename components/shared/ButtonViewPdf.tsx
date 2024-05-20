@@ -18,7 +18,7 @@ const ButtonViewPdf = ({title, src}: ButtonProps) => {
     >
       <Button
         variant={"default"}
-        className="p-8 md:p-6 text-lg font-medium flex gap-2 items-center"
+        className="p-8 md:p-6 md:text-lg font-medium flex gap-2 items-center text-wrap"
       >
         <p>Ver {"'"}{title}{"'"}</p>
         <span>
