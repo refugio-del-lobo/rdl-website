@@ -159,7 +159,7 @@ const Propuestas = () => {
                 <div className="wrapper w-full p-2 flex flex-col items-center justify-center gap-4 drop-shadow-md">
                   <ButtonViewPdf
                     title="Yoga, Golf & meditación"
-                    src="/assets/images/pdfs-rdl/yoga-golf-meditacion_Refugio-del-lobo.pdf"
+                    src="/assets/images/pdfs-rdl/Yoga-Golf-Meditacion_Refugio-del-lobo.pdf"
                   />
                   <ButtonViewPdf
                     title="RenaSer - Retiro espiritual"
@@ -216,7 +216,7 @@ const Propuestas = () => {
                   <div className="wrapper w-full p-2 flex flex-col items-center justify-center gap-4 drop-shadow-md">
                     <ButtonViewPdf
                       title="Ski Week"
-                      src="/assets/images/pdfs-rdl/ski-week_Refugio-del-lobo.pdf"
+                      src="/assets/images/pdfs-rdl/Ski-week_Refugio-del-lobo.pdf"
                     />
                     <ButtonViewPdf
                       title="After Ski Experience"
