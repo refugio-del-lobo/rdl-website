@@ -10,7 +10,10 @@ export default function Home() {
       <div className="w-full h-full opacity-layer-70 hf-paddings">
         <div className="wrapper h-[100svh] flex flex-col justify-between md:gap-0">
           <h1 className="tracking-wide drop-shadow-md hero-title pt-4 md:pt-12">
-            Disfrutá la patagonia Argentina
+            {/* Disfrutá La Patagonia */}
+            <span className="block md:text-[7rem] drop-shadow-md">Disfrutá</span>
+            <span className="block md:text-[7rem] drop-shadow-md">La Patagonia</span>
+            {/* <span className="block md:text-[7rem] drop-shadow-md ">San Martín de los Andes</span> */}
           </h1>
           <div className=" flex flex-col text-right w-full px-2 tracking-wide drop-shadow-md hero-text">
             <p className="w-full md:w-9/12 self-end">
@@ -60,7 +63,7 @@ export default function Home() {
                       <p>
                         Wifi{" "}
                         <span className="text-lg text-gray-500">
-                          {"("}150 megas c/ fibra óptica{")"}
+                          {"("}500 megas c/ fibra óptica{")"}
                         </span>
                       </p>
                     </li>

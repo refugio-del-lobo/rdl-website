@@ -17,19 +17,19 @@ const Nosotros = () => {
               <h1 className="text-3xl md:text-5xl xl:text-7xl text-center pb-6 md:pb-12">
                 Nosotros
               </h1>
-              <div className="text-xl xl:text-2xl flex flex-col gap-6 text-justify">
+              <div className="text-xl xl:text-2xl flex flex-col gap-6 text-balance">
                 <div className="flex flex-col lg:flex-row gap-3 items-center">
-                  {/* <p className="lg:w-9/12 lg:px-12 2xl:px-24 drop-shadow-md">
-                    Somos tu{" "}
-                    <span className="font-semibold">casa boutique de montaña </span>
-                     ubicada en la entrada de {" "} 
-                    <span className="font-semibold">
-                    San Martín de los Andes.
-                    </span>
-                    <span className="text-gray-500 text-sm"> (A tan solo 10 minutos del aeropuerto y a 15 del centro)</span>
-                  </p> */}
-                  <p className="lg:w-9/12 lg:px-12 2xl:px-24 drop-shadow-md">
-                  Sumérgete en la serenidad de los Andes en nuestra exclusiva <span className="font-semibold">casa boutique</span> emplazada en un barrio cerrado <span className="font-semibold">entre majestuosas montañas</span>, nuestra morada encarna el misterio y la esencia de la naturaleza. Descubre un refugio <span className="font-semibold">donde el tiempo se detiene y la calma te rodea</span>, ofreciéndote una experiencia auténtica y única.
+                  <p className="lg:w-9/12 lg:px-12 2xl:px-24 drop-shadow-md italic text-base lg:text-lg font-medium">
+                  {/* Sumérgete en la serenidad de los Andes en nuestra exclusiva <span className="font-semibold">casa boutique</span> emplazada en un barrio cerrado <span className="font-semibold">entre majestuosas montañas</span>, nuestra morada encarna el misterio y la esencia de la naturaleza. Descubre un refugio <span className="font-semibold">donde el tiempo se detiene y la calma te rodea</span>, ofreciéndote una experiencia auténtica y única. */}
+                  <span className="block mb-2">Bienvenido, </span>
+                  <span className="block">{" "}Esta es una casa de amigos, para amigos y por los amigos.{" "}</span>
+                  <span className="block mb-2">Espero que al irte quieras regresar y que te puedas haber llevado algún lindo recuerdo, un poco mas de paz o al menos el cuerpo cansado y la mente en calma.</span>
+                  <span className="block mb-2">Muchas gracias por permitirnos recibirte en nuestra humilde morada y que Dios te bendiga, ya que &ldquo;estamos de paso&ldquo;, que al menos valga la pena. ¡Un abrazo desde el alma de todos nosotros!</span>
+                  <span className="block text-end">José Larralde</span>
+                  
+                  
+                  
+
                   </p>
                   <div className="flex justify-center max-w-[500px] max-h-[500px] drop-shadow-2xl">
                     <div className="rounded-sm img-container flex">
