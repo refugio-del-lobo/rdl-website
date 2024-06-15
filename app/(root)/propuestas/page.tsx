@@ -19,6 +19,10 @@ const inviernoFlyers: string[] = [
   "/assets/images/flyers-rdl/ski-week_1.jpg",
   "/assets/images/flyers-rdl/ski-week_ultimos-lugares.jpg",
 ]
+const armaTuPropuestaFlyers: string[] = [
+  "/assets/images/flyers-rdl/viajes-grupales_1.jpg",
+  "/assets/images/flyers-rdl/viajes-grupales_2.jpg",
+]
 
 const Propuestas = () => {
   useEffect(() => {
@@ -67,6 +71,12 @@ const Propuestas = () => {
                   className="flex-grow text-green-600 md:text-2xl md:w-1/3"
                 >
                   Invierno
+                </TabsTrigger>
+                <TabsTrigger
+                  value="armemosTuPropuesta"
+                  className="flex-grow text-green-600 md:text-2xl md:w-1/3"
+                >
+                  Armemos tu propuesta
                 </TabsTrigger>
               </TabsList>
 
@@ -171,6 +181,28 @@ const Propuestas = () => {
                       title="Ski Week"
                       src="/assets/images/pdfs-rdl/Ski-week_Refugio-del-lobo.pdf"
                     />
+                  </div>
+                </div>
+              </TabsContent>
+              
+              <TabsContent
+                value="armemosTuPropuesta"
+                className=" bg-contain bg-repeat-y lg:bg-cover rounded-md"
+              >
+                <div>
+                  <div className="flex flex-col">
+                    <p className="text-2xl md:text-4xl py-2 md:py-4 text-center">
+                      Armemos tu propuesta
+                    </p>
+                    <div className="wrapper">
+                      <p className="text-center text-pretty font-medium text-lg md:text-xl">
+                        Contanos cual es tu propuesta y armémosla en conjunto!
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="wrapper flex justify-center">
+                    <ImgCarousel imgPathArray={armaTuPropuestaFlyers} />
                   </div>
                 </div>
               </TabsContent>
