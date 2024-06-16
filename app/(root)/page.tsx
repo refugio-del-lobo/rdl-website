@@ -1,3 +1,4 @@
+import StickyWhatsappLink from "@/components/shared/StickyWhatsappLink"
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
 import Link from "next/link"
@@ -393,6 +394,7 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <StickyWhatsappLink />
       </div>
     </div>
   )
