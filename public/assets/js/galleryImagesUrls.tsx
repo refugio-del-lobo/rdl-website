@@ -64,15 +64,15 @@ export const galleryImagesUrls: GalleryImagesUrls = {
     ],
   },
   livings: [
+    "https://raw.githubusercontent.com/refugio-del-lobo/rdl-website/main/public/assets/images/interior/living/living_03.jpg",
+    "https://raw.githubusercontent.com/refugio-del-lobo/rdl-website/main/public/assets/images/interior/living/living_06.jpg",
+    "https://raw.githubusercontent.com/refugio-del-lobo/rdl-website/main/public/assets/images/interior/living/living_09.jpg",
     "https://raw.githubusercontent.com/refugio-del-lobo/rdl-website/main/public/assets/images/interior/living/living_01.jpg",
     "https://raw.githubusercontent.com/refugio-del-lobo/rdl-website/main/public/assets/images/interior/living/living_02.jpg",
-    "https://raw.githubusercontent.com/refugio-del-lobo/rdl-website/main/public/assets/images/interior/living/living_03.jpg",
     "https://raw.githubusercontent.com/refugio-del-lobo/rdl-website/main/public/assets/images/interior/living/living_04.jpg",
     "https://raw.githubusercontent.com/refugio-del-lobo/rdl-website/main/public/assets/images/interior/living/living_05.jpg",
-    "https://raw.githubusercontent.com/refugio-del-lobo/rdl-website/main/public/assets/images/interior/living/living_06.jpg",
     "https://raw.githubusercontent.com/refugio-del-lobo/rdl-website/main/public/assets/images/interior/living/living_07.jpg",
     "https://raw.githubusercontent.com/refugio-del-lobo/rdl-website/main/public/assets/images/interior/living/living_08.jpg",
-    "https://raw.githubusercontent.com/refugio-del-lobo/rdl-website/main/public/assets/images/interior/living/living_09.jpg",
   ],
   quincho: [
     "https://raw.githubusercontent.com/refugio-del-lobo/rdl-website/main/public/assets/images/interior/quincho/quincho_01.jpg",
