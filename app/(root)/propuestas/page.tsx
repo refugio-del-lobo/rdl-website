@@ -16,7 +16,6 @@ const otonoPrimaveraFlyers: string[] = [
   "/assets/images/flyers-rdl/Water&Mountain_refugio-del-lobo_flyer.jpg",
 ]
 const inviernoFlyers: string[] = [
-  "/assets/images/flyers-rdl/ski-week_1.jpg",
   "/assets/images/flyers-rdl/ski-week_ultimos-lugares.jpg",
 ]
 const armaTuPropuestaFlyers: string[] = [

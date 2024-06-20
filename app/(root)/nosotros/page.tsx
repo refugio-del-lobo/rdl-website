@@ -20,23 +20,25 @@ const Nosotros = () => {
               <div className="text-xl xl:text-2xl flex flex-col gap-6 text-balance">
                 <div className="flex flex-col lg:flex-row gap-3 items-center">
                   <p className="lg:w-9/12 lg:px-12 2xl:px-24 drop-shadow-md italic text-base lg:text-lg font-medium">
-                    <span className="block mb-2">Bienvenido, </span>
-                    <span className="block">
-                      {" "}
-                      Esta es una casa de amigos, para amigos y por los amigos.{" "}
-                    </span>
-                    <span className="block mb-2">
-                      Espero que al irte quieras regresar y que te puedas haber
-                      llevado algún lindo recuerdo, un poco mas de paz o al
-                      menos el cuerpo cansado y la mente en calma.
-                    </span>
-                    <span className="block mb-2">
-                      Muchas gracias por permitirnos recibirte en nuestra
-                      humilde morada y que Dios te bendiga, ya que
-                      &ldquo;estamos de paso&ldquo;, que al menos valga la pena.
-                      ¡Un abrazo desde el alma de todos nosotros!
-                    </span>
-                    <span className="block text-end">José Larralde</span>
+                    
+                      <span className="block mb-2 drop-shadow-md">Bienvenido, </span>
+                      <span className="block drop-shadow-md">
+                        {" "}
+                        Esta es una casa de amigos, para amigos y por los
+                        amigos.{" "}
+                      </span>
+                      <span className="block mb-2 drop-shadow-md">
+                        Espero que al irte quieras regresar y que te puedas
+                        haber llevado algún lindo recuerdo, un poco más de paz o
+                        al menos el cuerpo cansado y la mente en calma.
+                      </span>
+                      <span className="block mb-2 drop-shadow-md">
+                        Muchas gracias por permitirnos recibirte en nuestra
+                        humilde morada y que Dios te bendiga, ya que
+                        &ldquo;estamos de paso&ldquo;, que al menos valga la
+                        pena. ¡Un abrazo desde el alma de todos nosotros!
+                      </span>
+                      <span className="block text-end drop-shadow-md">José Larralde</span>
                   </p>
                   <div className="flex justify-center max-w-[500px] max-h-[500px] drop-shadow-2xl">
                     <div className="rounded-sm img-container flex">

@@ -16,7 +16,7 @@ export default function Home() {
             <span className="block md:text-[7rem] drop-shadow-md">La Patagonia</span>
             {/* <span className="block md:text-[7rem] drop-shadow-md ">San Martín de los Andes</span> */}
           </h1>
-          <div className=" flex flex-col text-right w-full px-2 tracking-wide drop-shadow-md hero-text">
+          <div className="flex flex-col text-right w-full px-2 tracking-wide drop-shadow-md hero-text">
             <p className="w-full md:w-9/12 self-end">
               Te invitamos a vivir experiencias inolvidables, paisajes
               impresionantes y una gastronomía con un toque hogareño
